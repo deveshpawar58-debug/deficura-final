@@ -1,0 +1,361 @@
+{
+  "recommendations": {
+    "iron": {
+      "nutrient_name": "Iron",
+      "clinical_target": "Restore ferritin reserves and elevate hemoglobin synthesis",
+      "key_foods": [
+        {
+          "name": "Moringa (Drumstick) Leaves & Dal",
+          "type": "Vegetarian",
+          "serving": "1 bowl cooked (100g)",
+          "iron_content": "~4.5 mg",
+          "highlight": "Exceptionally rich in non-heme iron and natural vitamin C"
+        },
+        {
+          "name": "Palak & Methi Saag (Spinach & Fenugreek)",
+          "type": "Vegetarian",
+          "serving": "1 cup cooked",
+          "iron_content": "~3.6 mg",
+          "highlight": "Cook in traditional iron kadai to boost bioavailability"
+        },
+        {
+          "name": "Sprouted Kala Chana (Black Chickpeas)",
+          "type": "Vegetarian",
+          "serving": "1 small cup (boiled/salad)",
+          "iron_content": "~3.2 mg",
+          "highlight": "Sprouting breaks down phytic acid to maximize absorption"
+        },
+        {
+          "name": "Garden Cress Seeds (Halim / Aliv)",
+          "type": "Superfood",
+          "serving": "1 tsp soaked with lemon water",
+          "iron_content": "~12 mg / 100g",
+          "highlight": "Traditional Indian postpartum powerhouse for rapid iron recovery"
+        },
+        {
+          "name": "Jaggery & Roasted Chana (Gur-Chana)",
+          "type": "Snack",
+          "serving": "30g afternoon snack",
+          "iron_content": "~2.5 mg",
+          "highlight": "Simple, accessible everyday Indian iron booster"
+        },
+        {
+          "name": "Country Chicken Liver / Mutton Liver",
+          "type": "Non-Vegetarian",
+          "serving": "75g cooked",
+          "iron_content": "~8.8 mg",
+          "highlight": "Highest bioavailability heme iron, directly absorbed"
+        }
+      ],
+      "bioavailability_rules": [
+        "Always squeeze fresh Nimbu (lemon) or add Amla over green leafy vegetables \u2014 Vitamin C boosts non-heme iron absorption by up to 300%.",
+        "Avoid drinking Chai (tea) or Coffee within 1 hour before or after iron-rich meals, as tannins and polyphenols severely inhibit iron uptake.",
+        "Cook curries in cast-iron cookware (lohe ki kadai) to naturally leach dietary elemental iron into food."
+      ]
+    },
+    "vitamin_b12": {
+      "nutrient_name": "Vitamin B12",
+      "clinical_target": "Support myelin sheath preservation and erythroid cell division",
+      "key_foods": [
+        {
+          "name": "Fresh Indian Curd (Dahi) & Chaas",
+          "type": "Dairy / Vegetarian",
+          "serving": "200g bowl daily",
+          "b12_content": "~0.6 mcg",
+          "highlight": "Fermented lactic acid matrix enhances mucosal absorption"
+        },
+        {
+          "name": "Paneer (Cottage Cheese)",
+          "type": "Dairy / Vegetarian",
+          "serving": "100g raw or lightly grilled",
+          "b12_content": "~1.1 mcg",
+          "highlight": "High protein and natural cobalamin source for lacto-vegetarians"
+        },
+        {
+          "name": "Fortified Cow Milk / Buffalo Milk",
+          "type": "Dairy / Fortified",
+          "serving": "1 tall glass (250 ml)",
+          "b12_content": "~1.2 mcg",
+          "highlight": "Boiled gently; daily Indian morning/bedtime staple"
+        },
+        {
+          "name": "Desi Eggs (Boiled / Bhurji / Curry)",
+          "type": "Eggitarian",
+          "serving": "2 whole eggs",
+          "b12_content": "~1.6 mcg",
+          "highlight": "Yolk contains concentrated bioactive cobalamin and choline"
+        },
+        {
+          "name": "Rohu / Katla / Hilsa / Pomfret Fish Curry",
+          "type": "Non-Vegetarian",
+          "serving": "100g portion",
+          "b12_content": "~2.8 mcg",
+          "highlight": "Abundant cobalamin combined with heart-healthy omega-3 fats"
+        },
+        {
+          "name": "Fortified Breakfast Poha / Oats / Soy Milk",
+          "type": "Fortified / Vegan",
+          "serving": "1 bowl",
+          "b12_content": "~1.0 - 2.0 mcg",
+          "highlight": "Essential for strict vegans who avoid dairy and poultry"
+        }
+      ],
+      "bioavailability_rules": [
+        "Lacto-vegetarians should consume at least 2 to 3 servings of dairy (curd, milk, paneer) distributed throughout the day.",
+        "If stomach acidity is low or antacids/metformin are taken regularly, consult a physician regarding sublingual methylcobalamin drops or B-complex.",
+        "Include fermented Indian preparations like idli, dosa, and kanji for beneficial gut microbiome synergy."
+      ]
+    },
+    "vitamin_d": {
+      "nutrient_name": "Vitamin D",
+      "clinical_target": "Normalize circulating 25(OH)D levels and bone mineralization",
+      "key_foods": [
+        {
+          "name": "Sun-Exposed Button / Shiitake Mushrooms",
+          "type": "Vegetarian",
+          "serving": "100g sauteed",
+          "d_content": "~400 - 800 IU",
+          "highlight": "Exposing sliced mushrooms to midday sunlight for 30 mins generates Vitamin D2"
+        },
+        {
+          "name": "FSSAI Fortified Milk & Ghee (+F logo)",
+          "type": "Fortified Dairy",
+          "serving": "1 glass milk + 1 tsp ghee",
+          "d_content": "~120 - 200 IU",
+          "highlight": "Nationally fortified staples compliant with FSSAI standards"
+        },
+        {
+          "name": "Fortified Cooking Oils (Mustard / Soy / Sunflower)",
+          "type": "Fortified Staple",
+          "serving": "Used in daily cooking",
+          "d_content": "~100 - 150 IU / day",
+          "highlight": "Look for the blue +F fortified logo on retail oil pouches"
+        },
+        {
+          "name": "Whole Desi Egg Yolks",
+          "type": "Eggitarian",
+          "serving": "2 eggs",
+          "d_content": "~88 IU",
+          "highlight": "Natural lipid-soluble cholecalciferol vehicle"
+        },
+        {
+          "name": "Mackerel (Bangda) / Sardines (Tarli)",
+          "type": "Non-Vegetarian",
+          "serving": "100g curry or shallow fry",
+          "d_content": "~360 - 500 IU",
+          "highlight": "Affordable coastal Indian oily fish packed with natural Vitamin D3"
+        }
+      ],
+      "bioavailability_rules": [
+        "Get 15\u201325 minutes of direct sunlight on arms, legs, and face between 11:00 AM and 1:30 PM without sunscreen, 3\u20134 times weekly for endogenous dermal synthesis.",
+        "Vitamin D is fat-soluble: always consume dietary sources with healthy fats (ghee, cold-pressed mustard oil, or whole milk) for intestinal micelle incorporation.",
+        "In severe deficiency (serum < 20 ng/mL), clinical weekly cholecalciferol (60,000 IU) supplementation under doctor supervision is standard protocol."
+      ]
+    },
+    "calcium": {
+      "nutrient_name": "Calcium",
+      "clinical_target": "Maintain skeletal density, prevent osteopenia, and stabilize neuromuscular firing",
+      "key_foods": [
+        {
+          "name": "Ragi / Finger Millet (Roti, Mudde, Porridge)",
+          "type": "Vegetarian Staple",
+          "serving": "1 cup flour / 2 rotis",
+          "calcium_content": "~344 mg",
+          "highlight": "Highest calcium content among all cereals \u2014 over 10x that of rice or wheat"
+        },
+        {
+          "name": "White & Black Sesame Seeds (Til Laddu / Chutney)",
+          "type": "Vegetarian Snack",
+          "serving": "2 tablespoons (20g)",
+          "calcium_content": "~280 mg",
+          "highlight": "Ancient Indian superseed delivering concentrated organic calcium and lignans"
+        },
+        {
+          "name": "Fresh Indian Curd (Dahi)",
+          "type": "Dairy",
+          "serving": "1 medium bowl (150g)",
+          "calcium_content": "~180 mg",
+          "highlight": "High bioavailability with bio-active peptides"
+        },
+        {
+          "name": "Moringa Leaves / Drumsticks",
+          "type": "Vegetarian",
+          "serving": "1 bowl curry",
+          "calcium_content": "~150 mg",
+          "highlight": "Substantially lower oxalate levels compared to raw spinach, boosting absorption"
+        },
+        {
+          "name": "Tofu / Paneer",
+          "type": "Vegetarian / Vegan",
+          "serving": "100g cubes",
+          "calcium_content": "~200 - 350 mg",
+          "highlight": "Calcium-set tofu or fresh milk paneer for muscle and bone repair"
+        },
+        {
+          "name": "Small Bone-in Fish (Anchovies / Nethili)",
+          "type": "Non-Vegetarian",
+          "serving": "75g fried/curry",
+          "calcium_content": "~250 mg",
+          "highlight": "Consuming edible soft bones provides intact hydroxyapatite matrix"
+        }
+      ],
+      "bioavailability_rules": [
+        "Soak millets and pulses for 6\u20138 hours and discard the soaking water to reduce phytates and antinutrients.",
+        "Pair calcium intake with adequate Vitamin D; without Vitamin D, only 10\u201315% of dietary calcium is absorbed in the gut.",
+        "Spread calcium intake across multiple meals rather than a single large dose, as intestinal fractional absorption declines above 500 mg per meal."
+      ]
+    },
+    "zinc": {
+      "nutrient_name": "Zinc",
+      "clinical_target": "Enhance mucosal barrier repair, wound healing velocity, and T-cell response",
+      "key_foods": [
+        {
+          "name": "Pumpkin Seeds (Kaddu ke Beej) & Watermelon Seeds",
+          "type": "Seeds / Snack",
+          "serving": "2 tablespoons (30g)",
+          "zinc_content": "~2.2 mg",
+          "highlight": "Easiest everyday Indian seed snack; lightly roast with rock salt"
+        },
+        {
+          "name": "Kabuli Chana / Rajma / Moong Dal",
+          "type": "Legumes",
+          "serving": "1 cup thick cooked dal",
+          "zinc_content": "~1.8 mg",
+          "highlight": "Soaked and sprouted to unlock bioavailable chelated zinc"
+        },
+        {
+          "name": "Cashews & Almonds (Kaju & Badam)",
+          "type": "Nuts",
+          "serving": "Handful (25g)",
+          "zinc_content": "~1.5 mg",
+          "highlight": "Traditional Indian morning soaked nuts with healthy monounsaturated fats"
+        },
+        {
+          "name": "Whole Bajra (Pearl Millet) Khichdi / Roti",
+          "type": "Grain",
+          "serving": "2 rotis or 1 bowl khichdi",
+          "zinc_content": "~2.5 mg",
+          "highlight": "Traditional winter grain rich in zinc, iron, and dietary fiber"
+        },
+        {
+          "name": "Mutton / Chicken Thigh (Curry)",
+          "type": "Non-Vegetarian",
+          "serving": "100g cooked",
+          "zinc_content": "~3.5 - 4.5 mg",
+          "highlight": "High bio-potency zinc with no phytic acid interference"
+        }
+      ],
+      "bioavailability_rules": [
+        "Sprouting (ankuran) pulses and fermenting batters (like idli/dosa) activates phytase enzyme, degrading phytates and doubling zinc absorption.",
+        "Avoid taking high-dose iron supplements at the exact same meal as zinc, as they compete for the divalent metal transporter (DMT-1).",
+        "Incorporate sulfur-containing alliums (garlic and onions) in curry bases, which have been proven to enhance zinc bioaccessibility from pulses."
+      ]
+    },
+    "folate": {
+      "nutrient_name": "Folate (Vitamin B9)",
+      "clinical_target": "Restore normal RBC mean corpuscular volume (MCV) and homocysteine clearance",
+      "key_foods": [
+        {
+          "name": "Mung Sprout Salad (Ankurit Moong with Tomato & Lemon)",
+          "type": "Raw / Sprouted",
+          "serving": "1 medium bowl (120g)",
+          "folate_content": "~160 mcg",
+          "highlight": "Uncooked raw sprouted moong preserves heat-sensitive natural polyglutamates"
+        },
+        {
+          "name": "Methi (Fenugreek) & Palak Saag",
+          "type": "Vegetarian",
+          "serving": "1 cup lightly cooked",
+          "folate_content": "~140 mcg",
+          "highlight": "Steam or light saute rather than prolonged boiling to prevent folate breakdown"
+        },
+        {
+          "name": "Toor Dal / Chana Dal / Masoor Dal",
+          "type": "Legumes",
+          "serving": "1 large bowl cooked",
+          "folate_content": "~120 mcg",
+          "highlight": "Core foundation of daily Indian thali, providing steady folate and protein"
+        },
+        {
+          "name": "Bhindi (Okra / Lady Finger Curry)",
+          "type": "Vegetarian",
+          "serving": "1 cup stir-fry",
+          "folate_content": "~60 mcg",
+          "highlight": "Cooked with mustard seeds and amchur/lemon for optimal nutrient preservation"
+        },
+        {
+          "name": "Papaya & Mosambi (Sweet Lime) / Oranges",
+          "type": "Fruits",
+          "serving": "1 cup diced fresh fruit",
+          "folate_content": "~55 mcg",
+          "highlight": "Fresh seasonal citrus fruits rich in active L-methylfolate and vitamin C"
+        },
+        {
+          "name": "Desi Eggs",
+          "type": "Eggitarian",
+          "serving": "2 eggs",
+          "folate_content": "~45 mcg",
+          "highlight": "Synergistic folate and B12 combination in egg yolk"
+        }
+      ],
+      "bioavailability_rules": [
+        "Folate is highly water-soluble and heat-sensitive; avoid over-boiling vegetables in open pots for extended durations. Steam or pressure-cook with minimal water.",
+        "Include at least one portion of raw or lightly steamed salad (sprouts, cucumber, tomatoes with lemon) daily.",
+        "Women of reproductive age planning pregnancy should maintain optimal folate to prevent neural tube defects."
+      ]
+    },
+    "vitamin_a": {
+      "nutrient_name": "Vitamin A",
+      "clinical_target": "Support rhodopsin regeneration in retina and corneal epithelial health",
+      "key_foods": [
+        {
+          "name": "Gajar (Indian Red/Orange Carrot) Halwa / Salad",
+          "type": "Vegetable",
+          "serving": "1 medium bowl / 150g",
+          "vit_a_content": "~850 mcg RAE",
+          "highlight": "Packed with provitamin A beta-carotene; cooked with milk/ghee for maximum uptake"
+        },
+        {
+          "name": "Kaddu / Pumpkin Curry (Sitaphal / Petha)",
+          "type": "Vegetable",
+          "serving": "1 cup cooked curry",
+          "vit_a_content": "~400 mcg RAE",
+          "highlight": "Gentle on digestion and rich in alpha- and beta-carotene"
+        },
+        {
+          "name": "Ripe Alphonso / Kesar Mango / Papaya",
+          "type": "Seasonal Fruit",
+          "serving": "1 medium bowl sliced",
+          "vit_a_content": "~300 - 600 mcg RAE",
+          "highlight": "Indian summer delight bursting with active carotenoids and antioxidants"
+        },
+        {
+          "name": "Moringa Leaf Bhaji / Drumstick Curry",
+          "type": "Vegetarian Greens",
+          "serving": "1 bowl",
+          "vit_a_content": "~380 mcg RAE",
+          "highlight": "One of the densest green leafy sources of provitamin A"
+        },
+        {
+          "name": "Pure Cow Desi Ghee & Fortified Milk",
+          "type": "Dairy / Fortified",
+          "serving": "1 tablespoon ghee (15g)",
+          "vit_a_content": "~100 mcg RAE",
+          "highlight": "Provides preformed retinol and the vital lipid matrix needed to absorb carotenoids"
+        },
+        {
+          "name": "Egg Yolk & Liver",
+          "type": "Non-Vegetarian",
+          "serving": "2 eggs or 50g liver",
+          "vit_a_content": "~200 - 1500 mcg RAE",
+          "highlight": "Direct, preformed retinol ready for immediate metabolic use"
+        }
+      ],
+      "bioavailability_rules": [
+        "Beta-carotene from carrots, papaya, and leafy greens is fat-soluble \u2014 always consume them with a small amount of dietary fat (ghee, mustard oil, or curd).",
+        "Light cooking or pureeing breaks vegetable cell walls, increasing carotenoid bioavailability by up to 400% compared to raw fibrous chunks.",
+        "Ensure concurrent Zinc adequacy, as zinc is mandatory for hepatic synthesis of Retinol-Binding Protein (RBP) to transport Vitamin A through bloodstream."
+      ]
+    }
+  }
+}

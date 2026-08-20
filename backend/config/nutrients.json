@@ -1,0 +1,291 @@
+{
+  "nutrients": [
+    {
+      "id": "iron",
+      "name": "Iron",
+      "subtitle": "Hemoglobin & Cellular Oxygenation",
+      "max_score": 20,
+      "weight_per_symptom": 4,
+      "prevalence_india": "Over 53% of women (NFHS-5) and 25% of men in India are affected by Iron Deficiency Anemia due to phytate-rich cereal diets and low bioavailable heme iron intake.",
+      "description": "Essential for producing hemoglobin, which carries oxygen in red blood cells across your body.",
+      "symptoms": [
+        {
+          "id": "fatigue",
+          "name": "Fatigue & Low Energy",
+          "clinical_description": "Generalized lethargy and persistent exhaustion due to impaired tissue oxygenation.",
+          "weight": 4
+        },
+        {
+          "id": "pallor",
+          "name": "Pale Skin & Conjunctiva (Pallor)",
+          "clinical_description": "Paleness on inner eyelids, face, tongue, and nail beds from reduced hemoglobin.",
+          "weight": 4
+        },
+        {
+          "id": "brittle_nails",
+          "name": "Brittle or Spoon-shaped Nails",
+          "clinical_description": "Koilonychia or weak, easily cracked and concave fingernails.",
+          "weight": 4
+        },
+        {
+          "id": "hair_loss",
+          "name": "Excessive Hair Shedding & Loss",
+          "clinical_description": "Telogen effluvium resulting from inadequate ferritin supply to hair follicle matrix.",
+          "weight": 4
+        },
+        {
+          "id": "breathlessness",
+          "name": "Breathlessness on Mild Exertion",
+          "clinical_description": "Dyspnea during routine walking or stairs due to reduced red blood cell oxygen carrying capacity.",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "vitamin_b12",
+      "name": "Vitamin B12",
+      "subtitle": "Cobalamin \u2014 Nerve & DNA Synthesis",
+      "max_score": 25,
+      "weight_per_symptom": 5,
+      "prevalence_india": "Prevalent in up to 70% of Indian adults, primarily because Vitamin B12 is synthesized exclusively by bacteria and present naturally only in animal-derived foods, while the majority follow vegetarian diets.",
+      "description": "Crucial for myelin sheath maintenance, DNA synthesis, and red blood cell maturation.",
+      "symptoms": [
+        {
+          "id": "tingling_numbness",
+          "name": "Tingling / Numbness (Pins & Needles)",
+          "clinical_description": "Peripheral neuropathy and paresthesia in hands and feet due to demyelination.",
+          "weight": 5
+        },
+        {
+          "id": "memory_issues",
+          "name": "Memory Issues & Brain Fog",
+          "clinical_description": "Cognitive slowing, forgetfulness, and confusion related to cerebral metabolic decline.",
+          "weight": 5
+        },
+        {
+          "id": "fatigue",
+          "name": "Deep Physical & Mental Fatigue",
+          "clinical_description": "Macrocytic (megaloblastic) anemia causing persistent systemic tiredness.",
+          "weight": 5
+        },
+        {
+          "id": "mood_changes",
+          "name": "Mood Changes & Irritability",
+          "clinical_description": "Depression, emotional lability, and irritability due to impaired monoamine neurotransmitter synthesis.",
+          "weight": 5
+        },
+        {
+          "id": "glossitis_mouth_ulcers",
+          "name": "Smooth Red Tongue (Glossitis) & Soreness",
+          "clinical_description": "Inflammation of lingual papillae making the tongue beefy-red and painful.",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "id": "vitamin_d",
+      "name": "Vitamin D",
+      "subtitle": "Cholecalciferol \u2014 Bone & Immune Regulator",
+      "max_score": 20,
+      "weight_per_symptom": 4,
+      "prevalence_india": "Affects 70\u201390% of Indians across all socioeconomic strata due to melanin skin pigmentation blocking UV-B absorption, indoor sedentary routines, and extensive clothing cover.",
+      "description": "Regulates calcium-phosphorus homeostasis, bone mineral density, and immune defense genes.",
+      "symptoms": [
+        {
+          "id": "bone_pain",
+          "name": "Bone & Lower Back Aches",
+          "clinical_description": "Deep, aching bone discomfort and osteomalacic tenderness over the sternum and spine.",
+          "weight": 4
+        },
+        {
+          "id": "muscle_weakness",
+          "name": "Proximal Muscle Weakness",
+          "clinical_description": "Difficulty rising from a chair or climbing stairs due to reduced type II muscle fiber function.",
+          "weight": 4
+        },
+        {
+          "id": "frequent_infections",
+          "name": "Frequent Colds & Respiratory Infections",
+          "clinical_description": "Blunted cathelicidin and defensin production, weakening mucosal antibacterial defenses.",
+          "weight": 4
+        },
+        {
+          "id": "depression_low_mood",
+          "name": "Low Mood & Seasonal Blues",
+          "clinical_description": "Affective disturbances linked to Vitamin D receptor downregulation in the brain.",
+          "weight": 4
+        },
+        {
+          "id": "chronic_fatigue",
+          "name": "Persistent Unexplained Fatigue",
+          "clinical_description": "Chronic daily fatigue despite adequate sleep, linked to suboptimal cellular oxidative phosphorylation.",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "calcium",
+      "name": "Calcium",
+      "subtitle": "Skeletal Density & Neuromuscular Signaling",
+      "max_score": 15,
+      "weight_per_symptom": 3,
+      "prevalence_india": "Mean dietary calcium intake in India is under 400 mg/day (less than half the ICMR recommended 1000 mg/day) due to low dairy/greens diversity and high phytate/oxalate bindings.",
+      "description": "Structural foundation for bones and teeth, essential for muscle contraction and cardiac rhythm.",
+      "symptoms": [
+        {
+          "id": "muscle_cramps",
+          "name": "Muscle Spasms & Nocturnal Calf Cramps",
+          "clinical_description": "Hypocalcemic neuromuscular excitability causing sudden tetany, twitches, and cramps.",
+          "weight": 3
+        },
+        {
+          "id": "brittle_nails",
+          "name": "Weak, Brittle & Peeling Nails",
+          "clinical_description": "Suboptimal calcium incorporation into keratinized matrix causing fragile nails.",
+          "weight": 3
+        },
+        {
+          "id": "dental_problems",
+          "name": "Dental Weakness & Fragile Enamel",
+          "clinical_description": "Enamel hypomineralization, tooth decay, and brittle dentin.",
+          "weight": 3
+        },
+        {
+          "id": "bone_fractures",
+          "name": "Bone Density Loss & Frequent Sprains/Fractures",
+          "clinical_description": "Progressive osteopenia/osteoporosis increasing vulnerability to low-impact fractures.",
+          "weight": 3
+        },
+        {
+          "id": "tingling_numbness",
+          "name": "Numbness & Tingling in Fingers/Toes",
+          "clinical_description": "Paresthesias around perioral and distal extremities from altered nerve resting potentials.",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "subtitle": "Cellular Immunity & Tissue Regeneration",
+      "max_score": 15,
+      "weight_per_symptom": 3,
+      "prevalence_india": "Estimated 40\u201350% of the Indian population has marginal zinc status due to high cereal-to-meat ratios and excessive phytic acid inhibiting intestinal zinc bioavailability.",
+      "description": "Cofactor for over 300 metalloenzymes controlling cell division, immune defense, and protein synthesis.",
+      "symptoms": [
+        {
+          "id": "slow_wound_healing",
+          "name": "Slow Healing of Cuts & Bruises",
+          "clinical_description": "Impaired fibroblast proliferation and collagen synthesis delaying skin epithelialization.",
+          "weight": 3
+        },
+        {
+          "id": "taste_smell_loss",
+          "name": "Loss or Alteration of Taste / Smell",
+          "clinical_description": "Dysgeusia and hypogeusia caused by low gustin (carbonic anhydrase VI) enzyme activity.",
+          "weight": 3
+        },
+        {
+          "id": "hair_thinning",
+          "name": "Diffuse Hair Thinning & Dry Scalp",
+          "clinical_description": "Disrupted follicle mitosis and sebaceous gland regulation causing thinning hair strands.",
+          "weight": 3
+        },
+        {
+          "id": "frequent_infections",
+          "name": "Low Immunity & Recurrent Colds",
+          "clinical_description": "Decreased T-lymphocyte maturation and natural killer cell activity against common pathogens.",
+          "weight": 3
+        },
+        {
+          "id": "dry_scaly_skin",
+          "name": "Dry Skin Patches & Acne Lesions",
+          "clinical_description": "Acrodermatitis-like dermatitis and impaired epidermal barrier function.",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "folate",
+      "name": "Folate (Vitamin B9)",
+      "subtitle": "Cell Division, Methylation & Erythropoiesis",
+      "max_score": 20,
+      "weight_per_symptom": 4,
+      "prevalence_india": "High prevalence among women and youth (30\u201345%) exacerbated by prolonged high-heat cooking of green vegetables and low fresh salad/citrus intake.",
+      "description": "Essential for one-carbon metabolism, DNA replication, neural tube integrity, and RBC production.",
+      "symptoms": [
+        {
+          "id": "fatigue",
+          "name": "General Weakness & Chronic Fatigue",
+          "clinical_description": "Megaloblastic anemia with enlarged, inefficient erythroblasts reducing oxygen capacity.",
+          "weight": 4
+        },
+        {
+          "id": "glossitis_mouth_ulcers",
+          "name": "Recurrent Mouth Ulcers & Sore Gums",
+          "clinical_description": "Stomatitis and shallow mucosal erosions due to rapid epithelial turnover failure.",
+          "weight": 4
+        },
+        {
+          "id": "poor_concentration",
+          "name": "Poor Concentration & Mental Sluggishness",
+          "clinical_description": "Impaired cerebral folate pathways affecting alertness and processing speed.",
+          "weight": 4
+        },
+        {
+          "id": "pallor",
+          "name": "Pale Skin & Subicteric Sclera",
+          "clinical_description": "Ineffective erythropoiesis resulting in mild lemon-yellow pallor.",
+          "weight": 4
+        },
+        {
+          "id": "breathlessness",
+          "name": "Exertional Breathlessness & Dizziness",
+          "clinical_description": "Cardiovascular compensation for reduced circulating red blood cell volume.",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "vitamin_a",
+      "name": "Vitamin A",
+      "subtitle": "Retinol \u2014 Vision, Epithelial Barrier & Immunity",
+      "max_score": 15,
+      "weight_per_symptom": 3,
+      "prevalence_india": "Historically endemic in India (~30\u201340% subclinical deficiency in vulnerable groups), driven by inadequate dietary beta-carotene conversion and low dietary fat co-ingestion.",
+      "description": "Vital for rhodopsin formation for night vision, mucosal epithelium lining, and antibody response.",
+      "symptoms": [
+        {
+          "id": "night_blindness",
+          "name": "Difficulty Seeing in Dim Light (Nyctalopia)",
+          "clinical_description": "Delayed dark adaptation due to depleted rod photoreceptor rhodopsin photopigment.",
+          "weight": 3
+        },
+        {
+          "id": "dry_itchy_eyes",
+          "name": "Dry, Itchy Eyes & Bitot's Spots",
+          "clinical_description": "Xerophthalmia caused by conjunctival goblet cell loss and keratinization of the ocular surface.",
+          "weight": 3
+        },
+        {
+          "id": "frequent_infections",
+          "name": "Frequent Respiratory & Gastrointestinal Bugs",
+          "clinical_description": "Epithelial integrity breakdown in the respiratory and gut tracts allowing pathogen entry.",
+          "weight": 3
+        },
+        {
+          "id": "dry_scaly_skin",
+          "name": "Dry, Scaly Skin (Follicular Hyperkeratosis)",
+          "clinical_description": "Keratin plugging around hair follicles resulting in rough 'goosebump' skin texture.",
+          "weight": 3
+        },
+        {
+          "id": "slow_wound_healing",
+          "name": "Delayed Epithelial Healing",
+          "clinical_description": "Slower regeneration of cutaneous layers after superficial injuries.",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

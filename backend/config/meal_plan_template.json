@@ -1,0 +1,459 @@
+{
+  "weekly_base_plan": [
+    {
+      "day": "Day 1 (Monday)",
+      "theme": "Energy and Folate Revival",
+      "breakfast": {
+        "title": "Sprouted Moong and Vegetable Poha",
+        "description": "Flattened rice cooked with sprouted green moong, curry leaves, peanuts, grated carrots, and fresh lemon squeeze.",
+        "nutritional_focus": [
+          "Folate",
+          "Iron",
+          "Vitamin A"
+        ],
+        "calories_approx": "340 kcal"
+      },
+      "lunch": {
+        "title": "Palak Dal Tadka + Whole Wheat Roti + Dahi",
+        "description": "Toor dal simmered with fresh spinach and garlic-cumin tempering, 2 phulkas, cucumber-tomato kachumber, and fresh curd.",
+        "nutritional_focus": [
+          "Iron",
+          "Vitamin B12",
+          "Folate",
+          "Calcium"
+        ],
+        "calories_approx": "520 kcal"
+      },
+      "evening_snack": {
+        "title": "Roasted Chana and Gur with Masala Chaas",
+        "description": "Crunchy roasted chickpeas with organic jaggery and a glass of chilled mint buttermilk.",
+        "nutritional_focus": [
+          "Iron",
+          "Calcium",
+          "Vitamin B12"
+        ],
+        "calories_approx": "180 kcal"
+      },
+      "dinner": {
+        "title": "Moringa (Drumstick) Sambar + Steamed Rice or Idli",
+        "description": "Aromatic lentil stew cooked with drumsticks and pumpkin, served with steamed rice or soft idlis.",
+        "nutritional_focus": [
+          "Calcium",
+          "Vitamin A",
+          "Zinc"
+        ],
+        "calories_approx": "460 kcal"
+      }
+    },
+    {
+      "day": "Day 2 (Tuesday)",
+      "theme": "Skeletal Strength and Calcium Boost",
+      "breakfast": {
+        "title": "Ragi (Finger Millet) Dosa with Coconut-Til Chutney",
+        "description": "Crispy iron and calcium-dense finger millet crepes served with coconut and white sesame seed chutney.",
+        "nutritional_focus": [
+          "Calcium",
+          "Iron",
+          "Zinc"
+        ],
+        "calories_approx": "360 kcal"
+      },
+      "lunch": {
+        "title": "Rajma Masala + Jeera Brown Rice + Amla Koshimbir",
+        "description": "Slow-cooked kidney beans in tomato-ginger gravy with jeera rice and grated amla-carrot salad.",
+        "nutritional_focus": [
+          "Iron",
+          "Folate",
+          "Zinc",
+          "Vitamin A"
+        ],
+        "calories_approx": "540 kcal"
+      },
+      "evening_snack": {
+        "title": "Spiced Pumpkin Seeds and Badam Mix",
+        "description": "Dry-roasted pumpkin seeds and watermelon seeds with 6 soaked almonds.",
+        "nutritional_focus": [
+          "Zinc",
+          "Vitamin D cofactors",
+          "Magnesium"
+        ],
+        "calories_approx": "190 kcal"
+      },
+      "dinner": {
+        "title": "Methi Paneer Bhurji or Tofu Stir-fry + Multigrain Rotis",
+        "description": "Fresh paneer or calcium-set tofu tossed with fresh fenugreek leaves, bell peppers, and warm spices.",
+        "nutritional_focus": [
+          "Vitamin B12",
+          "Calcium",
+          "Folate"
+        ],
+        "calories_approx": "480 kcal"
+      }
+    },
+    {
+      "day": "Day 3 (Wednesday)",
+      "theme": "Neuro-Cognitive and Cobalamin Support",
+      "breakfast": {
+        "title": "Desi Masala Egg Bhurji or Tofu Scramble + Whole Grain Toast",
+        "description": "2 eggs scrambled with tomatoes, onions, and coriander, or spiced crumbled tofu with fortified milk.",
+        "nutritional_focus": [
+          "Vitamin B12",
+          "Vitamin D",
+          "Choline"
+        ],
+        "calories_approx": "370 kcal"
+      },
+      "lunch": {
+        "title": "Chana Dal Khichdi with Dahi and Roasted Papad",
+        "description": "Hearty one-pot meal of split Bengal gram and rice, infused with spices and ghee, with fresh curd.",
+        "nutritional_focus": [
+          "Folate",
+          "Zinc",
+          "Vitamin B12"
+        ],
+        "calories_approx": "510 kcal"
+      },
+      "evening_snack": {
+        "title": "Halim (Garden Cress) Laddu or Soaked Aliv Drink",
+        "description": "Traditional preparation of iron-packed garden cress seeds with grated coconut and jaggery.",
+        "nutritional_focus": [
+          "Iron",
+          "Folate",
+          "Calcium"
+        ],
+        "calories_approx": "160 kcal"
+      },
+      "dinner": {
+        "title": "Lauki and Chana Dal Curry + Phulkas",
+        "description": "Light, hydrating bottle gourd simmered with protein-rich lentils and 2 whole wheat phulkas.",
+        "nutritional_focus": [
+          "Zinc",
+          "Folate",
+          "Iron"
+        ],
+        "calories_approx": "430 kcal"
+      }
+    },
+    {
+      "day": "Day 4 (Thursday)",
+      "theme": "Vision, Carotenoid and Epithelial Repair",
+      "breakfast": {
+        "title": "Gajar-Methi Paratha with Homemade White Butter or Curd",
+        "description": "Whole wheat flatbread stuffed with grated red carrots and fresh methi leaves, served with fresh dahi.",
+        "nutritional_focus": [
+          "Vitamin A",
+          "Folate",
+          "Vitamin B12"
+        ],
+        "calories_approx": "380 kcal"
+      },
+      "lunch": {
+        "title": "Fish Curry (Rohu or Mackerel) OR Soy-Mushroom Tikka Masala + Rice",
+        "description": "Oily coastal fish in coconut curry OR sun-exposed button mushrooms and soy chunks in spiced gravy.",
+        "nutritional_focus": [
+          "Vitamin D",
+          "Vitamin B12",
+          "Zinc"
+        ],
+        "calories_approx": "550 kcal"
+      },
+      "evening_snack": {
+        "title": "Fresh Papaya and Sweet Lime Bowl with Chia Seeds",
+        "description": "A bowl of ripe golden papaya cubes sprinkled with lime juice and roasted chia seeds.",
+        "nutritional_focus": [
+          "Vitamin A",
+          "Folate",
+          "Calcium"
+        ],
+        "calories_approx": "150 kcal"
+      },
+      "dinner": {
+        "title": "Kaddu (Yellow Pumpkin) Ki Subzi + Moong Dal Tadka + Rotis",
+        "description": "Sweet and tangy spiced yellow pumpkin cooked in mustard oil, served with yellow moong dal and soft rotis.",
+        "nutritional_focus": [
+          "Vitamin A",
+          "Zinc",
+          "Folate"
+        ],
+        "calories_approx": "470 kcal"
+      }
+    },
+    {
+      "day": "Day 5 (Friday)",
+      "theme": "Immune Defense and Cellular Zinc Renewal",
+      "breakfast": {
+        "title": "Mixed Sprout Cheela (Savory Moong and Chana Pancakes)",
+        "description": "Protein-dense ground sprout batter infused with ginger and cumin, served with fresh mint-amla chutney.",
+        "nutritional_focus": [
+          "Zinc",
+          "Iron",
+          "Folate"
+        ],
+        "calories_approx": "330 kcal"
+      },
+      "lunch": {
+        "title": "Chole (Chickpeas) + Bajra or Wheat Rotis + Beetroot Salad",
+        "description": "Traditional Punjabi chole cooked with amchur for deep iron enhancement, with sliced beet-onion salad.",
+        "nutritional_focus": [
+          "Iron",
+          "Zinc",
+          "Folate"
+        ],
+        "calories_approx": "560 kcal"
+      },
+      "evening_snack": {
+        "title": "Warm Fortified Turmeric Milk with Walnuts",
+        "description": "A cup of warm milk boiled with fresh turmeric and crushed black pepper, paired with 3 walnuts.",
+        "nutritional_focus": [
+          "Vitamin D",
+          "Calcium",
+          "Vitamin B12"
+        ],
+        "calories_approx": "210 kcal"
+      },
+      "dinner": {
+        "title": "Sarson or Palak Paneer OR Soya Bhurji + Missi Roti",
+        "description": "Nutrient-packed winter greens stew with paneer cubes or textured soy, served with chickpea-wheat missi rotis.",
+        "nutritional_focus": [
+          "Iron",
+          "Calcium",
+          "Vitamin A",
+          "Vitamin B12"
+        ],
+        "calories_approx": "490 kcal"
+      }
+    },
+    {
+      "day": "Day 6 (Saturday)",
+      "theme": "Antioxidant and Micronutrient Synergy",
+      "breakfast": {
+        "title": "Oats and Vegetable Upma with Roasted Cashews",
+        "description": "Rolled oats roasted with curry leaves, green peas, diced carrots, beans, and crunchy cashews.",
+        "nutritional_focus": [
+          "Zinc",
+          "Vitamin A",
+          "Folate"
+        ],
+        "calories_approx": "350 kcal"
+      },
+      "lunch": {
+        "title": "South Indian Thali: Moringa Sambar, Cabbage Poriyal, Rasam and Curd Rice",
+        "description": "Drumstick sambar, turmeric-tempered cabbage with fresh coconut, black-pepper immunity rasam, and probiotic curd rice.",
+        "nutritional_focus": [
+          "Calcium",
+          "Vitamin B12",
+          "Vitamin A",
+          "Zinc"
+        ],
+        "calories_approx": "530 kcal"
+      },
+      "evening_snack": {
+        "title": "Til-Gud Chikki / Sesame Snacking Bar",
+        "description": "Traditional crunchy sesame and jaggery brittle bar providing instant mineral replenishment.",
+        "nutritional_focus": [
+          "Calcium",
+          "Iron",
+          "Magnesium"
+        ],
+        "calories_approx": "170 kcal"
+      },
+      "dinner": {
+        "title": "Khichdi with Roasted Papad, Lemon Pickle and Ghee",
+        "description": "Easily digestible rice-moong dal khichdi drizzled with 1 tsp pure cow desi ghee, paired with raw tomato slices.",
+        "nutritional_focus": [
+          "Vitamin A",
+          "Zinc",
+          "Folate"
+        ],
+        "calories_approx": "440 kcal"
+      }
+    },
+    {
+      "day": "Day 7 (Sunday)",
+      "theme": "Comprehensive Replenishment and Vitality",
+      "breakfast": {
+        "title": "Fermented Idlis with Sambar and Moringa-Pudina Chutney",
+        "description": "Steamed rice-urad dal cakes naturally fermented for B-vitamin enrichment, with drumstick sambar and fresh mint chutney.",
+        "nutritional_focus": [
+          "Vitamin B12",
+          "Folate",
+          "Calcium"
+        ],
+        "calories_approx": "340 kcal"
+      },
+      "lunch": {
+        "title": "Sunday Special: Desi Chicken or Egg Curry OR Paneer Makhani + Jeera Rice + Dahi",
+        "description": "Slow-simmered aromatic curry rich in bioavailable minerals, served with whole spices rice and cooling cucumber raita.",
+        "nutritional_focus": [
+          "Vitamin B12",
+          "Iron",
+          "Zinc",
+          "Vitamin D"
+        ],
+        "calories_approx": "580 kcal"
+      },
+      "evening_snack": {
+        "title": "Seasonal Fruit Chaat with Chaat Masala",
+        "description": "Fresh fiber-rich fruit bowl loaded with vitamin C to amplify dinner mineral assimilation.",
+        "nutritional_focus": [
+          "Folate",
+          "Vitamin A",
+          "Iron cofactors"
+        ],
+        "calories_approx": "140 kcal"
+      },
+      "dinner": {
+        "title": "Dal Maharani (Mixed Lentils) + Soft Phulkas + Green Salad",
+        "description": "Combination of rajma, black urad, and chana dal simmered slowly with tomato puree and ginger juliennes.",
+        "nutritional_focus": [
+          "Iron",
+          "Zinc",
+          "Folate"
+        ],
+        "calories_approx": "460 kcal"
+      }
+    }
+  ],
+  "nutrient_targeted_swaps": {
+    "iron": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Add 1 glass of fresh Amla-Beetroot juice (Vitamin C + Non-heme Iron) alongside morning meal."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Substitute plain dal with Palak Dal or Moringa Leaf Curry cooked in a cast iron kadai."
+        },
+        {
+          "meal_slot": "evening_snack",
+          "swap_item": "Replace tea/biscuits with Gur-Chana (30g roasted chickpeas + organic jaggery) or Halim Seed soaked drink."
+        }
+      ]
+    },
+    "vitamin_b12": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Include 2 boiled desi eggs or 1 tall glass of fortified cow/soy milk."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Ensure 1 full bowl (200g) of fresh probiotic dahi (curd) or 100g fresh paneer cubes."
+        },
+        {
+          "meal_slot": "dinner",
+          "swap_item": "Incorporate fish curry (e.g. Rohu/Mackerel) or paneer/fortified tofu into the dinner menu."
+        }
+      ]
+    },
+    "vitamin_d": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Take morning meal near a sunlit window or spend 20 minutes in midday sunlight (11 AM - 1 PM)."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Add sun-exposed sauteed mushrooms or fortified cooking oil/ghee in meal preparation."
+        },
+        {
+          "meal_slot": "evening_snack",
+          "swap_item": "Drink 1 glass of FSSAI fortified milk with crushed nuts (fat helps absorption)."
+        }
+      ]
+    },
+    "calcium": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Swap wheat bread with Ragi Dosa / Ragi Roti and white sesame chutney."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Add Moringa pods (drumstick) sambar and 1 cup set curd."
+        },
+        {
+          "meal_slot": "evening_snack",
+          "swap_item": "Snack on 2 tablespoons of roasted til (sesame seeds) with jaggery (Til-Gud)."
+        }
+      ]
+    },
+    "zinc": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Sprinkle 2 tbsp roasted pumpkin and watermelon seeds over poha/upma/porridge."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Opt for soaked and sprouted legume curries (sprouted moong or chana dal)."
+        },
+        {
+          "meal_slot": "dinner",
+          "swap_item": "Use whole pearl millet (Bajra) rotis or khichdi instead of refined grains."
+        }
+      ]
+    },
+    "folate": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Include 1 bowl of raw sprouted moong salad with lemon juice and tomatoes."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Add steamed methi / palak or lady finger (bhindi) sabzi."
+        },
+        {
+          "meal_slot": "evening_snack",
+          "swap_item": "Consume 1 cup of fresh papaya, sweet lime (mosambi), or orange slices."
+        }
+      ]
+    },
+    "vitamin_a": {
+      "trigger_tiers": [
+        "Medium",
+        "High"
+      ],
+      "meal_swaps": [
+        {
+          "meal_slot": "breakfast",
+          "swap_item": "Add grated red carrots or papaya slices to morning plate."
+        },
+        {
+          "meal_slot": "lunch",
+          "swap_item": "Add yellow pumpkin curry or drumstick leaves sauteed in 1 tsp pure desi ghee."
+        },
+        {
+          "meal_slot": "dinner",
+          "swap_item": "Include spinach-methi sabzi prepared with healthy cooking fat for beta-carotene uptake."
+        }
+      ]
+    }
+  }
+}
