@@ -1,11 +1,12 @@
 import React from 'react';
-import { ShieldCheck, Moon, Sun, History, RotateCcw, Activity } from 'lucide-react';
+import { ShieldCheck, Moon, Sun, History, RotateCcw, Activity, FileText } from 'lucide-react';
 
 export default function Header({ 
   darkMode, 
   setDarkMode, 
   onViewHistory, 
   onResetAssessment, 
+  onViewBloodAnalyzer,
   hasResults,
   activeTab,
   setActiveTab 
@@ -49,6 +50,18 @@ export default function Header({
                 <span>New Assessment</span>
               </button>
             )}
+
+            <button
+              onClick={onViewBloodAnalyzer}
+              className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
+                activeTab === 'blood_analyzer'
+                  ? 'bg-teal-600 text-white shadow-sm'
+                  : 'text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700'
+              }`}
+            >
+              <FileText className="w-3.5 h-3.5" />
+              <span>Blood Report</span>
+            </button>
 
             <button
               onClick={onViewHistory}

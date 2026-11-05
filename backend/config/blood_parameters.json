@@ -1,0 +1,790 @@
+{
+  "categories": {
+    "cbc": "Complete Blood Count (CBC)",
+    "iron": "Iron Panel",
+    "vitamins": "Vitamins & Micronutrients",
+    "glucose": "Glucose & Glycemic Control",
+    "kidney": "Kidney Function & Electrolytes",
+    "liver": "Liver Function Test (LFT)",
+    "lipids": "Lipid Profile"
+  },
+  "parameters": {
+    "hemoglobin": {
+      "name": "Hemoglobin (Hb)",
+      "category": "cbc",
+      "aliases": ["hemoglobin", "hb", "haemoglobin", "hgb", "total hemoglobin"],
+      "default_unit": "g/dL",
+      "default_ref": {"low": 12.0, "high": 16.0},
+      "description": "Iron-rich protein in red blood cells responsible for transporting oxygen throughout your body.",
+      "low": {
+        "explanation": "Result is below the reference range. This can have multiple causes including reduced dietary iron or vitamin absorption.",
+        "nutritional_considerations": "Consider dietary sources of bioavailable iron and vitamin C to support normal red blood cell production.",
+        "foods": ["Palak (Spinach) Dal", "Moringa (Drumstick) Leaves", "Sprouted Black Chana", "Garden Cress (Halim) seeds", "Eggs/Liver (if non-veg)", "Jaggery (Gur) with Roasted Chana"],
+        "precautions": ["Do not start high-dose iron tablets without medical supervision.", "Avoid drinking tea or coffee immediately with main meals as tannins inhibit iron absorption."]
+      },
+      "high": {
+        "explanation": "Result is above the reference range. This may reflect dehydration, high altitude adaptation, or other non-dietary factors.",
+        "nutritional_considerations": "Maintain adequate daily hydration with water, buttermilk (chaas), and fresh lime water.",
+        "foods": ["Hydrating foods: Cucumber, Lauki (Bottle Gourd), Coconut water", "Balanced whole grains"],
+        "precautions": ["Ensure proper daily fluid intake.", "Discuss with your doctor if elevation persists."]
+      },
+      "doctor_guidance": "If Hemoglobin is below 10.0 g/dL or above 18.0 g/dL, schedule an in-person medical consultation."
+    },
+    "rbc": {
+      "name": "Red Blood Cell Count (RBC)",
+      "category": "cbc",
+      "aliases": ["rbc", "rbc count", "red blood cell", "red blood corpuscles", "erythrocyte count"],
+      "default_unit": "mil/uL",
+      "default_ref": {"low": 4.0, "high": 5.5},
+      "description": "Total count of circulating red blood cells carrying oxygen from lungs to body tissues.",
+      "low": {
+        "explanation": "RBC count is lower than the reference range, which may relate to micronutrient availability or other physiological factors.",
+        "nutritional_considerations": "Nutrients like Iron, Folate (B9), and Vitamin B12 are critical cofactors in bone marrow erythropoiesis.",
+        "foods": ["Sprouted Moong Salad", "Beetroot & Amla Juice", "Methi Saag", "Desi Eggs", "Fortified Dairy"],
+        "precautions": ["Do not self-prescribe supplements without knowing whether Iron, B12, or Folate is the primary factor."]
+      },
+      "high": {
+        "explanation": "RBC count is above reference range. This often reflects transient hemoconcentration due to low fluid intake.",
+        "nutritional_considerations": "Focus on consistent hydration throughout the day.",
+        "foods": ["Chaas (Buttermilk)", "Nariyal Pani (Coconut Water)", "Water-rich fruits like Watermelon and Orange"],
+        "precautions": ["Consult your physician if RBC count remains persistently elevated."]
+      },
+      "doctor_guidance": "Discuss with a healthcare provider if RBC count is significantly out of range."
+    },
+    "wbc": {
+      "name": "Total Leukocyte Count (WBC)",
+      "category": "cbc",
+      "aliases": ["wbc", "wbc count", "tlc", "total leukocyte count", "total white blood count", "white blood cells"],
+      "default_unit": "/uL",
+      "default_ref": {"low": 4000.0, "high": 11000.0},
+      "description": "Immune cells defending your body against infections and foreign pathogens.",
+      "low": {
+        "explanation": "WBC count is below the reference range, indicating lower circulating immune cell reserves.",
+        "nutritional_considerations": "Zinc, Vitamin C, Vitamin D, and protein support healthy immune cell maturation.",
+        "foods": ["Pumpkin Seeds (Kaddu Beej)", "Amla (Indian Gooseberry)", "Curd (Dahi)", "Turmeric Golden Milk (Haldi Doodh)"],
+        "precautions": ["Practice good food hygiene and avoid raw unwashed street food when immune cells are low."]
+      },
+      "high": {
+        "explanation": "WBC count is above reference range. This is commonly a temporary reaction to minor infection, inflammation, or physical stress.",
+        "nutritional_considerations": "Include anti-inflammatory Indian spices and wholesome antioxidant-rich meals.",
+        "foods": ["Ginger & Tulsi Tea", "Garlic Tadka Dal", "Moong Dal Khichdi with Ghee", "Fresh Papaya"],
+        "precautions": ["If accompanied by fever, pain, or chills, seek prompt clinical evaluation."]
+      },
+      "doctor_guidance": "If WBC is below 3,000 /uL or above 15,000 /uL, consult a healthcare provider."
+    },
+    "platelets": {
+      "name": "Platelet Count",
+      "category": "cbc",
+      "aliases": ["platelet", "platelets", "platelet count", "plt", "thrombocyte count"],
+      "default_unit": "10^3/uL",
+      "default_ref": {"low": 150.0, "high": 450.0},
+      "description": "Cell fragments vital for blood clotting and wound repair.",
+      "low": {
+        "explanation": "Platelet count is below reference range. This can follow recent viral infections or micronutrient insufficiencies.",
+        "nutritional_considerations": "Vitamin B12, Folate, and natural antioxidants support bone marrow thrombopoiesis.",
+        "foods": ["Papaya Leaf extract (traditional culinary support)", "Fresh Pomegranate", "Sprouted pulses", "Dahi / Curd"],
+        "precautions": ["Avoid vigorous contact sports if platelets are very low.", "Seek medical attention if unexplained bruising appears."]
+      },
+      "high": {
+        "explanation": "Platelet count is above reference range, which may reflect reactive thrombocytosis during systemic recovery.",
+        "nutritional_considerations": "Emphasize wholesome hydration and anti-inflammatory whole foods.",
+        "foods": ["Flaxseed (Alsi) Powder", "Garlic", "Green Leafy Vegetables"],
+        "precautions": ["Consult your physician to rule out underlying inflammatory triggers."]
+      },
+      "doctor_guidance": "If platelet count is below 100,000 /uL, clinical evaluation is advised."
+    },
+    "hematocrit": {
+      "name": "Hematocrit / PCV",
+      "category": "cbc",
+      "aliases": ["pcv", "hematocrit", "packed cell volume", "hct"],
+      "default_unit": "%",
+      "default_ref": {"low": 36.0, "high": 48.0},
+      "description": "The percentage of whole blood volume made up of red blood cells.",
+      "low": {
+        "explanation": "Packed cell volume is below reference range, pointing to lower relative red cell volume.",
+        "nutritional_considerations": "Support iron and protein intake with nutrient-dense Indian meals.",
+        "foods": ["Palak Paneer / Tofu", "Toor Dal with Lemon", "Roasted Chana", "Ragi Roti"],
+        "precautions": ["Follow up with a full Iron Profile if fatigue or breathlessness is present."]
+      },
+      "high": {
+        "explanation": "Hematocrit is elevated, frequently reflecting reduced plasma volume from mild dehydration.",
+        "nutritional_considerations": "Drink adequate water and electrolyte-rich fluids throughout the day.",
+        "foods": ["Nimbu Pani with rock salt", "Chaas (Buttermilk)", "Hydrating vegetables like Bottle Gourd (Lauki)"],
+        "precautions": ["Rehydrate and recheck under physician guidance if it remains high."]
+      },
+      "doctor_guidance": "Consult a doctor if PCV remains significantly out of reference range."
+    },
+    "mcv": {
+      "name": "Mean Corpuscular Volume (MCV)",
+      "category": "cbc",
+      "aliases": ["mcv", "mean corpuscular volume", "mean cell volume"],
+      "default_unit": "fL",
+      "default_ref": {"low": 80.0, "high": 100.0},
+      "description": "Average physical size of your red blood cells, helping differentiate between microcytic and macrocytic patterns.",
+      "low": {
+        "explanation": "MCV is below reference range (microcytosis, smaller red cells). In the Indian context, this is frequently seen alongside low iron stores.",
+        "nutritional_considerations": "Focus on iron-rich staples paired with Vitamin C (Amla, Lemon) to enhance absorption.",
+        "foods": ["Drumstick (Moringa) Curry", "Palak Dal", "Halim (Aliv) seeds", "Sprouted Kala Chana"],
+        "precautions": ["Do not take calcium and iron at the exact same meal as they compete for absorption."]
+      },
+      "high": {
+        "explanation": "MCV is above reference range (macrocytosis, enlarged red cells). This pattern is commonly linked with suboptimal Vitamin B12 or Folate status.",
+        "nutritional_considerations": "Incorporate Vitamin B12 sources (dairy, eggs, fish, or fortified foods) and folate-rich greens/legumes.",
+        "foods": ["Paneer", "Fresh Dahi (Curd)", "Desi Eggs", "Sprouted Moong Salad", "Methi Saag"],
+        "precautions": ["Vegetarians should discuss Vitamin B12 levels with a nutritionist or doctor."]
+      },
+      "doctor_guidance": "Share MCV results with a doctor alongside Serum Ferritin and B12 values."
+    },
+    "mch": {
+      "name": "Mean Corpuscular Hemoglobin (MCH)",
+      "category": "cbc",
+      "aliases": ["mch", "mean corpuscular hemoglobin", "mean cell hemoglobin"],
+      "default_unit": "pg",
+      "default_ref": {"low": 27.0, "high": 32.0},
+      "description": "Average amount of hemoglobin inside a single red blood cell.",
+      "low": {
+        "explanation": "MCH is below reference range, suggesting pale red cells (hypochromia) typically seen in low iron status.",
+        "nutritional_considerations": "Enhance bioavailable dietary iron intake.",
+        "foods": ["Palak Saag", "Jaggery & Chana", "Moringa Dal", "Sesame Til Laddu"],
+        "precautions": ["Pair green vegetables with fresh lemon juice to maximize non-heme iron absorption."]
+      },
+      "high": {
+        "explanation": "MCH is elevated, often accompanying macrocytic patterns linked to Vitamin B12 or Folate factors.",
+        "nutritional_considerations": "Ensure adequate daily B-complex and cobalamin sources.",
+        "foods": ["Curd / Chaas", "Paneer", "Desi Eggs", "Sprouted Pulses"],
+        "precautions": ["Review your Vitamin B12 intake."]
+      },
+      "doctor_guidance": "Correlate MCH with Hemoglobin and MCV during clinical review."
+    },
+    "mchc": {
+      "name": "MCHC",
+      "category": "cbc",
+      "aliases": ["mchc", "mean corpuscular hemoglobin concentration"],
+      "default_unit": "g/dL",
+      "default_ref": {"low": 32.0, "high": 36.0},
+      "description": "Concentration of hemoglobin in a given volume of packed red blood cells.",
+      "low": {
+        "explanation": "MCHC is below reference range, indicating low hemoglobin density inside red cells.",
+        "nutritional_considerations": "Support dietary iron and micronutrient density.",
+        "foods": ["Beetroot & Carrot Salad with Lemon", "Methi Thepla", "Sprouted Chana"],
+        "precautions": ["Discuss with your doctor if fatigue or weakness is present."]
+      },
+      "high": {
+        "explanation": "MCHC is above reference range. This is rare and may relate to sample handling or specific red cell membrane factors.",
+        "nutritional_considerations": "Maintain balanced home-cooked meals and good hydration.",
+        "foods": ["Wholesome Indian Thali with Dal, Roti, Sabzi, and Curd"],
+        "precautions": ["Consult your doctor for laboratory verification."]
+      },
+      "doctor_guidance": "Review with your physician."
+    },
+    "rdw": {
+      "name": "Red Cell Distribution Width (RDW)",
+      "category": "cbc",
+      "aliases": ["rdw", "rdw-cv", "rdw-sd", "red cell distribution width"],
+      "default_unit": "%",
+      "default_ref": {"low": 11.5, "high": 14.5},
+      "description": "Variation in size and volume among circulating red blood cells (anisocytosis).",
+      "low": {
+        "explanation": "RDW is within or slightly below typical variation, showing uniform red blood cell sizing.",
+        "nutritional_considerations": "Maintain balanced nutritional habits.",
+        "foods": ["Balanced mixed-cereal diet with seasonal vegetables"],
+        "precautions": ["No specific dietary precautions."]
+      },
+      "high": {
+        "explanation": "RDW is elevated, meaning red blood cells show significant size variation. This is an early indicator of mixed nutritional factors (Iron, B12, or Folate).",
+        "nutritional_considerations": "Comprehensive multi-micronutrient focus: combine iron, B12, and folate sources.",
+        "foods": ["Mixed Sprout Salad (Moong + Chana)", "Dahi with Til / Flaxseed", "Moringa Sambar", "Citrus fruits"],
+        "precautions": ["An elevated RDW often precedes drops in Hemoglobin; consult a healthcare professional."]
+      },
+      "doctor_guidance": "High RDW warrants checking Ferritin, B12, and Folate levels."
+    },
+    "neutrophils": {
+      "name": "Neutrophils Percentage",
+      "category": "cbc",
+      "aliases": ["neutrophils", "neutrophil", "neutrophils %", "polymorphs", "polymorphonuclears", "segs"],
+      "default_unit": "%",
+      "default_ref": {"low": 40.0, "high": 70.0},
+      "description": "Primary white blood cells that fight bacterial infections.",
+      "low": {
+        "explanation": "Neutrophil percentage is below reference range, potentially after viral exposures or nutritional shortages.",
+        "nutritional_considerations": "Zinc and Protein support white blood cell production.",
+        "foods": ["Pumpkin Seeds", "Cashews", "Dal / Rajma", "Paneer"],
+        "precautions": ["Maintain good kitchen and personal hygiene."]
+      },
+      "high": {
+        "explanation": "Neutrophil percentage is elevated, typically representing an immune response to acute bacterial activity, inflammation, or physical stress.",
+        "nutritional_considerations": "Emphasize anti-inflammatory, easily digestible Indian comfort foods.",
+        "foods": ["Turmeric Moong Dal Khichdi", "Ginger-Garlic Rasam", "Steamed Idlis"],
+        "precautions": ["If accompanied by fever, pain, or chills, seek prompt clinical evaluation."]
+      },
+      "doctor_guidance": "Consult a healthcare provider if out of reference range."
+    },
+    "lymphocytes": {
+      "name": "Lymphocytes Percentage",
+      "category": "cbc",
+      "aliases": ["lymphocytes", "lymphocyte", "lymphocytes %", "lymphs"],
+      "default_unit": "%",
+      "default_ref": {"low": 20.0, "high": 40.0},
+      "description": "White blood cells (T-cells, B-cells, NK cells) that coordinate adaptive immunity and antibody production.",
+      "low": {
+        "explanation": "Lymphocyte percentage is below reference range.",
+        "nutritional_considerations": "Zinc, Vitamin D, and Vitamin A are crucial for lymphocyte function.",
+        "foods": ["Gajar (Carrot) & Pumpkin subzi", "Fortified milk", "Mixed nuts & seeds"],
+        "precautions": ["Discuss with your doctor if low counts persist."]
+      },
+      "high": {
+        "explanation": "Lymphocyte percentage is elevated, commonly following viral recovery.",
+        "nutritional_considerations": "Continue antioxidant-rich Indian whole food nutrition.",
+        "foods": ["Amla Chutney", "Papaya & Mosambi (Sweet Lime)", "Warm Masala Chaas"],
+        "precautions": ["Consult a doctor if elevation is marked or prolonged."]
+      },
+      "doctor_guidance": "Review with your physician."
+    },
+    "serum_iron": {
+      "name": "Serum Iron",
+      "category": "iron",
+      "aliases": ["serum iron", "iron", "fe", "total iron"],
+      "default_unit": "mcg/dL",
+      "default_ref": {"low": 60.0, "high": 170.0},
+      "description": "Measure of circulating iron bound to transferrin in the bloodstream.",
+      "low": {
+        "explanation": "Serum iron is below the reference range, indicating reduced circulating iron available for tissues.",
+        "nutritional_considerations": "Increase dietary intake of bioavailable iron and enhance absorption with Vitamin C.",
+        "foods": ["Palak / Methi Saag cooked in iron kadai", "Sprouted Kala Chana", "Halim / Aliv seeds in lemon water", "Jaggery (Gur) with Roasted Chana"],
+        "precautions": ["Do not drink tea, coffee, or milk with iron-rich meals.", "Do not self-prescribe high-dose iron supplements without Ferritin confirmation."]
+      },
+      "high": {
+        "explanation": "Serum iron is above reference range. This can occur from excessive supplementation, multiple blood transfusions, or metabolic factors.",
+        "nutritional_considerations": "Avoid iron-fortified tonics, supplements, or heavy cast-iron cooking until medically cleared.",
+        "foods": ["Green tea (tannins moderate iron uptake)", "Dairy products", "Whole grain high-fiber foods"],
+        "precautions": ["Stop any unprescribed iron supplements immediately.", "Consult your physician for a full iron overload workup."]
+      },
+      "doctor_guidance": "If Serum Iron is < 40 mcg/dL or > 200 mcg/dL, consult a healthcare provider."
+    },
+    "serum_ferritin": {
+      "name": "Serum Ferritin",
+      "category": "iron",
+      "aliases": ["ferritin", "serum ferritin", "s.ferritin"],
+      "default_unit": "ng/mL",
+      "default_ref": {"low": 15.0, "high": 200.0},
+      "description": "The primary intracellular iron storage protein; the most sensitive blood marker of total body iron reserves.",
+      "low": {
+        "explanation": "Serum Ferritin is below the reference range, indicating depleted iron reserves in the liver and bone marrow.",
+        "nutritional_considerations": "Targeted iron replenishment through daily Indian superfoods and bioavailable dietary strategies.",
+        "foods": ["Moringa (Drumstick) Leaf Curry", "Garden Cress Seeds (Aliv/Halim)", "Sprouted Moong & Black Chana", "Desi Eggs / Mutton Liver (if non-veg)"],
+        "precautions": ["Serum Ferritin is the gold standard for iron stores; low ferritin with normal Hb indicates latent iron deficiency.", "Discuss oral iron therapy with your doctor."]
+      },
+      "high": {
+        "explanation": "Serum Ferritin is elevated. Ferritin is an acute-phase reactant and can rise during infection, fatty liver, or systemic inflammation, as well as true iron overload.",
+        "nutritional_considerations": "Focus on an anti-inflammatory, low-refined-sugar, liver-supportive Indian diet.",
+        "foods": ["Bitter Gourd (Karela)", "Methi Seeds (soaked)", "Turmeric, Garlic, and Green Vegetables"],
+        "precautions": ["High ferritin does not automatically mean excess dietary iron; clinical evaluation for inflammation or metabolic factors is essential."]
+      },
+      "doctor_guidance": "Ferritin < 12 ng/mL indicates depleted stores; Ferritin > 300 ng/mL warrants clinical investigation."
+    },
+    "tibc": {
+      "name": "Total Iron Binding Capacity (TIBC)",
+      "category": "iron",
+      "aliases": ["tibc", "total iron binding capacity", "total iron-binding capacity"],
+      "default_unit": "mcg/dL",
+      "default_ref": {"low": 240.0, "high": 450.0},
+      "description": "Measures the blood's capacity to bind iron with transferrin; typically rises when body iron stores are low.",
+      "low": {
+        "explanation": "TIBC is below reference range, which can occur during chronic inflammation or protein malnutrition.",
+        "nutritional_considerations": "Ensure adequate daily high-quality protein and micronutrient balance.",
+        "foods": ["Paneer", "Soya chunks", "Mixed Dal Khichdi", "Eggs"],
+        "precautions": ["Consult your physician to review protein status and inflammatory markers."]
+      },
+      "high": {
+        "explanation": "TIBC is elevated. When body iron stores fall, the liver produces more transferrin to capture available iron, driving TIBC up.",
+        "nutritional_considerations": "Consistent iron and Vitamin C intake to replenish iron stores.",
+        "foods": ["Palak Dal", "Moringa Pod Sambar", "Halim Seed drink with Lemon", "Gur-Chana"],
+        "precautions": ["Elevated TIBC alongside low Ferritin is a hallmark pattern of iron deficiency."]
+      },
+      "doctor_guidance": "Review TIBC alongside Serum Iron and Ferritin."
+    },
+    "transferrin_sat": {
+      "name": "Transferrin Saturation (TSAT)",
+      "category": "iron",
+      "aliases": ["transferrin saturation", "tsat", "iron saturation", "% saturation", "transferrin sat"],
+      "default_unit": "%",
+      "default_ref": {"low": 20.0, "high": 50.0},
+      "description": "Percentage of transferrin iron-binding sites occupied by iron (Serum Iron / TIBC * 100).",
+      "low": {
+        "explanation": "Transferrin saturation is below reference range (<20%), indicating inadequate iron delivery to erythroid marrow.",
+        "nutritional_considerations": "Prioritize iron-dense foods and avoid dietary iron blockers (tannins/phytates) during meals.",
+        "foods": ["Sprouted Legumes", "Moringa Saag", "Jaggery with roasted grams", "Desi Eggs"],
+        "precautions": ["TSAT < 16% is a strong clinical signal of iron deficiency erythropoiesis."]
+      },
+      "high": {
+        "explanation": "Transferrin saturation is above reference range (>50%), signaling high iron availability or overload.",
+        "nutritional_considerations": "Avoid iron-fortified cereals, supplements, and alcohol.",
+        "foods": ["Fresh Green Salads", "Whole Fruits", "Green Tea"],
+        "precautions": ["Consult a gastroenterologist or physician to assess iron storage status."]
+      },
+      "doctor_guidance": "Consult a physician if TSAT is < 15% or > 50%."
+    },
+    "vitamin_b12": {
+      "name": "Vitamin B12 (Cobalamin)",
+      "category": "vitamins",
+      "aliases": ["vitamin b12", "vit b12", "b12", "cyanocobalamin", "cobalamin", "serum b12"],
+      "default_unit": "pg/mL",
+      "default_ref": {"low": 200.0, "high": 900.0},
+      "description": "Vital micronutrient for nerve myelin sheath integrity, brain cognition, and red blood cell DNA synthesis.",
+      "low": {
+        "explanation": "Vitamin B12 is below reference range. This is extremely prevalent in India (up to 70% of adults) due to vegetarian dietary patterns.",
+        "nutritional_considerations": "Incorporate daily dairy (curd, paneer, milk), eggs, fish, or fortified foods. Strict vegans require fortified products or supplementation.",
+        "foods": ["Fresh Dahi / Curd (200g daily)", "Paneer (Cottage Cheese)", "Desi Eggs (Boiled / Bhurji)", "Fortified Cow/Soy Milk", "Rohu / Mackerel Fish Curry"],
+        "precautions": ["Long-term low B12 can lead to numbness/tingling in hands and feet (peripheral neuropathy).", "Discuss sublingual methylcobalamin drops or tablets with your physician."]
+      },
+      "high": {
+        "explanation": "Vitamin B12 is above reference range. This is most commonly caused by recent high-dose B-complex or multivitamin injections/supplements.",
+        "nutritional_considerations": "If you are taking B12 supplements, consider pausing under medical guidance.",
+        "foods": ["Maintain normal balanced home-cooked Indian meals."],
+        "precautions": ["If you have not been taking B12 supplements, consult a doctor to evaluate liver and metabolic clearance."]
+      },
+      "doctor_guidance": "If Vitamin B12 is < 150 pg/mL, clinical evaluation and targeted replenishment are strongly recommended."
+    },
+    "folate": {
+      "name": "Serum Folate (Vitamin B9)",
+      "category": "vitamins",
+      "aliases": ["folate", "serum folate", "vitamin b9", "folic acid", "vit b9"],
+      "default_unit": "ng/mL",
+      "default_ref": {"low": 3.0, "high": 17.0},
+      "description": "Essential water-soluble B-vitamin needed for cellular division, amino acid metabolism, and neural tube integrity.",
+      "low": {
+        "explanation": "Folate is below reference range. In Indian kitchens, prolonged open boiling of vegetables often degrades natural heat-sensitive folates.",
+        "nutritional_considerations": "Consume fresh raw sprouted salads, lightly steamed greens, and seasonal fruits.",
+        "foods": ["Sprouted Moong Salad with Lemon & Tomato", "Methi & Palak Saag (lightly steamed)", "Toor / Chana Dal", "Papaya & Sweet Lime (Mosambi)", "Bhindi (Okra)"],
+        "precautions": ["Do not over-boil green vegetables; steam or pressure-cook with minimal water.", "Women of reproductive age should maintain optimal folate levels."]
+      },
+      "high": {
+        "explanation": "Folate is above reference range, typically from recent folic acid fortified foods or dietary supplements.",
+        "nutritional_considerations": "Balanced diet with diverse seasonal produce.",
+        "foods": ["Standard whole foods diet."],
+        "precautions": ["Excessive folate can mask Vitamin B12 deficiency; ensure B12 is also within healthy range."]
+      },
+      "doctor_guidance": "Consult your doctor if Folate is < 3.0 ng/mL."
+    },
+    "vitamin_d": {
+      "name": "Vitamin D (25-OH Total)",
+      "category": "vitamins",
+      "aliases": ["vitamin d", "vit d", "25-oh vitamin d", "25-hydroxy vitamin d", "vitamin d3", "cholecalciferol", "total vitamin d"],
+      "default_unit": "ng/mL",
+      "default_ref": {"low": 30.0, "high": 100.0},
+      "description": "Steroid hormone regulator of calcium-phosphorus metabolism, bone mineral density, and immune defense.",
+      "low": {
+        "explanation": "Vitamin D is below reference range (<30 ng/mL is insufficient, <20 ng/mL is deficient). Endemic in 70-90% of Indians due to skin melanin and indoor desk lifestyles.",
+        "nutritional_considerations": "Expose arms and legs to 15-20 minutes of midday sunlight (11 AM - 1:30 PM). Combine with fat-containing dietary sources for absorption.",
+        "foods": ["Sun-exposed sliced Button Mushrooms", "FSSAI Fortified Milk & Ghee (+F logo)", "Fortified Cooking Oils", "Whole Desi Egg Yolks", "Mackerel / Sardine Fish"],
+        "precautions": ["Dietary food alone rarely corrects severe deficiency (<20 ng/mL); consult your doctor regarding weekly cholecalciferol (60,000 IU) protocol.", "Vitamin D is fat-soluble; take sources with food containing healthy fats."]
+      },
+      "high": {
+        "explanation": "Vitamin D is above reference range (>100 ng/mL), almost always resulting from excessive therapeutic supplementation.",
+        "nutritional_considerations": "Discontinue Vitamin D supplements and maintain good hydration.",
+        "foods": ["Hydrating fluids, fresh water, chaas."],
+        "precautions": ["Stop high-dose Vitamin D supplementation immediately.", "Check Serum Calcium to rule out hypercalcemia."]
+      },
+      "doctor_guidance": "Vitamin D < 20 ng/mL warrants clinical supplementation; > 100 ng/mL warrants medical review."
+    },
+    "fasting_glucose": {
+      "name": "Fasting Blood Glucose",
+      "category": "glucose",
+      "aliases": ["fasting blood sugar", "fbs", "fasting glucose", "glucose fasting", "blood sugar fasting"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 70.0, "high": 99.0},
+      "description": "Measures blood glucose concentration after an overnight fast (minimum 8-10 hours).",
+      "low": {
+        "explanation": "Fasting glucose is below reference range (<70 mg/dL, hypoglycemia).",
+        "nutritional_considerations": "Ensure regular meal timing with complex carbohydrates and balanced protein to stabilize blood sugar.",
+        "foods": ["Oats Khichdi", "Sprouted Moong Cheela", "Roasted Chana with Jaggery (emergency rescue)"],
+        "precautions": ["Do not skip breakfast.", "If experiencing shakiness, sweating, or dizziness, consume a fast-acting carb and consult a doctor."]
+      },
+      "high": {
+        "explanation": "Fasting glucose is above reference range (100-125 mg/dL indicates impaired fasting glucose / pre-glycemic range; >=126 mg/dL warrants formal diagnostic follow-up).",
+        "nutritional_considerations": "Focus on high-fiber whole grains (Ragi, Bajra, Oats), reduce refined white rice/sugar/maida, and include bitter greens.",
+        "foods": ["Methi (Fenugreek) Seeds water in the morning", "Bitter Gourd (Karela) Sabzi", "Jamun / Amla", "Whole Wheat / Missi Roti (Besan + Wheat)"],
+        "precautions": ["A single high fasting reading does not establish diabetes; an HbA1c test and doctor consultation are necessary.", "Avoid sugary beverages, sweets, and refined baked goods."]
+      },
+      "doctor_guidance": "If Fasting Glucose is >= 126 mg/dL or < 60 mg/dL, consult a physician promptly."
+    },
+    "random_glucose": {
+      "name": "Random Blood Glucose",
+      "category": "glucose",
+      "aliases": ["random blood sugar", "rbs", "random glucose", "blood glucose random", "post prandial blood sugar", "ppbs"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 70.0, "high": 140.0},
+      "description": "Blood glucose level measured without regard to meal timing.",
+      "low": {
+        "explanation": "Random glucose is lower than normal baseline.",
+        "nutritional_considerations": "Eat wholesome complex-carbohydrate meals at steady intervals.",
+        "foods": ["Banana with Peanut Butter / Nuts", "Dal Roti with Vegetables"],
+        "precautions": ["Keep healthy snacks handy if prone to blood sugar dips."]
+      },
+      "high": {
+        "explanation": "Random glucose is above reference range (>140 mg/dL).",
+        "nutritional_considerations": "Reduce simple refined sugars and portion-control carbohydrate-dense foods.",
+        "foods": ["Vegetable Salad before meals", "Sprout Chaat", "Lauki / Karela subzi"],
+        "precautions": ["Schedule an HbA1c test and clinical evaluation with your doctor."]
+      },
+      "doctor_guidance": "If Random Glucose is >= 200 mg/dL, seek prompt medical consultation."
+    },
+    "hba1c": {
+      "name": "HbA1c (Glycated Hemoglobin)",
+      "category": "glucose",
+      "aliases": ["hba1c", "glycated hemoglobin", "glycohemoglobin", "a1c", "estimated average glucose"],
+      "default_unit": "%",
+      "default_ref": {"low": 4.0, "high": 5.6},
+      "description": "Reflects the average blood glucose concentration over the preceding 2 to 3 months.",
+      "low": {
+        "explanation": "HbA1c is below reference range (<4.0%), which can sometimes occur in rapid red blood cell turnover or hemolytic states.",
+        "nutritional_considerations": "Maintain steady balanced meals.",
+        "foods": ["Wholesome mixed Indian thali"],
+        "precautions": ["Discuss with your physician in the context of your complete blood count."]
+      },
+      "high": {
+        "explanation": "HbA1c is elevated (5.7 - 6.4% reflects pre-diabetes range; >= 6.5% reflects diabetes range per clinical guidelines).",
+        "nutritional_considerations": "Adopt a low-glycemic-index Indian meal pattern: replace refined rice/maida with Millets (Ragi, Jowar, Bajra), increase non-starchy sabzis, and incorporate legumes/paneer.",
+        "foods": ["Methi Roti", "Moong Dal & Vegetable Cheela", "Flaxseed (Alsi) added to atta", "Curd with Cinnamon powder", "Dal with Green Leafy Vegetables"],
+        "precautions": ["Engage in 30 minutes of daily brisk walking.", "Consult an endocrinologist or physician for a comprehensive metabolic plan.", "Do not start or stop medications without medical guidance."]
+      },
+      "doctor_guidance": "HbA1c >= 6.5% requires physician consultation for formal clinical evaluation."
+    },
+    "creatinine": {
+      "name": "Serum Creatinine",
+      "category": "kidney",
+      "aliases": ["creatinine", "serum creatinine", "s.creatinine", "creat"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 0.6, "high": 1.2},
+      "description": "Waste product from muscle metabolism filtered entirely by healthy kidneys.",
+      "low": {
+        "explanation": "Serum creatinine is below reference range, often reflecting low muscle mass or lower protein intake.",
+        "nutritional_considerations": "Ensure adequate dietary protein intake through pulses, paneer, and whole foods.",
+        "foods": ["Sprouted Moong", "Paneer", "Soya chunks", "Desi Eggs", "Lentil soups"],
+        "precautions": ["Include gentle resistance exercise to maintain lean muscle mass."]
+      },
+      "high": {
+        "explanation": "Serum creatinine is above reference range. This may reflect temporary dehydration, high protein/creatine intake, or reduced kidney filtration efficiency.",
+        "nutritional_considerations": "Stay well-hydrated. Avoid excessive high-protein powders or excess sodium/salt.",
+        "foods": ["Fresh Bottle Gourd (Lauki) Soup", "Cucumber & Apple", "Steamed Rice with mild Moong Dal"],
+        "precautions": ["Avoid NSAID painkiller medications (like ibuprofen) without doctor approval as they strain kidneys.", "Consult a nephrologist or physician for a formal Kidney Function Test and eGFR review."]
+      },
+      "doctor_guidance": "Creatinine > 1.5 mg/dL warrants prompt clinical follow-up."
+    },
+    "blood_urea": {
+      "name": "Blood Urea / BUN",
+      "category": "kidney",
+      "aliases": ["blood urea", "urea", "bun", "blood urea nitrogen", "s.urea"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 7.0, "high": 20.0},
+      "description": "Nitrogenous byproduct of protein breakdown excreted by the kidneys.",
+      "low": {
+        "explanation": "Blood urea is below reference range, which can occur with low-protein diets or high fluid turnover.",
+        "nutritional_considerations": "Ensure balanced dietary protein distribution across meals.",
+        "foods": ["Mixed Dal Tadka", "Dahi", "Nuts & Seeds"],
+        "precautions": ["No specific risk; maintain balanced nutrition."]
+      },
+      "high": {
+        "explanation": "Blood urea is elevated. Very commonly driven by mild dehydration, high protein intake, or reduced renal excretion.",
+        "nutritional_considerations": "Drink adequate water throughout the day. Moderate sodium intake.",
+        "foods": ["Coconut Water", "Light Moong Dal Khichdi", "Hydrating vegetables"],
+        "precautions": ["Ensure proper hydration before repeating test. Consult a doctor if creatinine is also high."]
+      },
+      "doctor_guidance": "Consult a physician if Blood Urea is > 40 mg/dL."
+    },
+    "egfr": {
+      "name": "Estimated GFR (eGFR)",
+      "category": "kidney",
+      "aliases": ["egfr", "gfr", "estimated glomerular filtration rate"],
+      "default_unit": "mL/min/1.73m2",
+      "default_ref": {"low": 90.0, "high": 120.0},
+      "description": "Calculated estimate of how efficiently your kidney glomeruli filter blood per minute.",
+      "low": {
+        "explanation": "eGFR is below 90 mL/min/1.73m2. Values between 60-89 indicate mildly reduced filtration; <60 warrants medical attention.",
+        "nutritional_considerations": "Focus on a kidney-friendly, moderate-salt, balanced hydration routine.",
+        "foods": ["Fresh home-cooked vegetables", "Moong dal", "Apples & Berries", "Lauki"],
+        "precautions": ["Limit processed packaged foods high in hidden sodium and phosphates.", "Consult a nephrologist or general physician."]
+      },
+      "high": {
+        "explanation": "eGFR is within optimal filtering range (>90).",
+        "nutritional_considerations": "Maintain current healthy kidney habits.",
+        "foods": ["Balanced whole foods diet"],
+        "precautions": ["Continue good hydration."]
+      },
+      "doctor_guidance": "If eGFR is < 60 mL/min/1.73m2, consult a physician."
+    },
+    "sodium": {
+      "name": "Serum Sodium",
+      "category": "kidney",
+      "aliases": ["sodium", "serum sodium", "na", "s.sodium"],
+      "default_unit": "mEq/L",
+      "default_ref": {"low": 135.0, "high": 145.0},
+      "description": "Major extracellular electrolyte regulating blood volume, osmotic pressure, and nerve transmission.",
+      "low": {
+        "explanation": "Sodium is below reference range (<135 mEq/L, hyponatremia). Can occur from heavy sweating, fluid retention, or specific medications.",
+        "nutritional_considerations": "Ensure balanced dietary salt and electrolyte intake, especially in hot Indian summers.",
+        "foods": ["Nimbu Pani with rock salt (Sendha Namak)", "Salted Chaas", "Warm Vegetable Soup with Salt"],
+        "precautions": ["Avoid excessive plain water drinking without electrolytes when sweating heavily.", "Consult a doctor if feeling confused or dizzy."]
+      },
+      "high": {
+        "explanation": "Sodium is above reference range (>145 mEq/L, hypernatremia), usually reflecting water deficit or high sodium intake.",
+        "nutritional_considerations": "Increase plain water intake and reduce packaged salty snacks (namkeens, papads, pickles).",
+        "foods": ["Plain Water", "Fresh Coconut Water", "Unsalted Cucumber slices"],
+        "precautions": ["Reduce retail pickles (achaar) and papads high in sodium."]
+      },
+      "doctor_guidance": "If Sodium is < 130 mEq/L or > 150 mEq/L, seek medical attention."
+    },
+    "potassium": {
+      "name": "Serum Potassium",
+      "category": "kidney",
+      "aliases": ["potassium", "serum potassium", "k", "s.potassium"],
+      "default_unit": "mEq/L",
+      "default_ref": {"low": 3.5, "high": 5.0},
+      "description": "Critical intracellular electrolyte governing heart cardiac rhythm and neuromuscular contraction.",
+      "low": {
+        "explanation": "Potassium is below reference range (<3.5 mEq/L, hypokalemia). Can cause muscle cramps, weakness, and fatigue.",
+        "nutritional_considerations": "Consume potassium-rich Indian fruits and vegetables.",
+        "foods": ["Nariyal Pani (Coconut Water)", "Bananas (Kela)", "Potatoes & Sweet Potatoes (Shakarkandi)", "Palak / Spinach", "Mosambi Juice"],
+        "precautions": ["Do not take potassium supplements without prescription."]
+      },
+      "high": {
+        "explanation": "Potassium is above reference range (>5.0 mEq/L, hyperkalemia). Requires medical evaluation as potassium directly influences heart rhythm.",
+        "nutritional_considerations": "Temporarily limit high-potassium foods (coconut water, bananas, raw spinach) until doctor review.",
+        "foods": ["Apple", "Papaya", "Bottle Gourd (Lauki)", "White Rice"],
+        "precautions": ["Consult your physician promptly.", "Do not consume low-sodium salt substitutes (which are often potassium chloride)."]
+      },
+      "doctor_guidance": "If Potassium is < 3.0 mEq/L or > 5.5 mEq/L, seek prompt medical care."
+    },
+    "alt_sgpt": {
+      "name": "ALT / SGPT",
+      "category": "liver",
+      "aliases": ["alt", "sgpt", "alanine aminotransferase", "alanine transaminase", "s.alt", "s.sgpt"],
+      "default_unit": "U/L",
+      "default_ref": {"low": 7.0, "high": 56.0},
+      "description": "Enzyme concentrated inside liver cells; a key indicator of hepatocellular integrity.",
+      "low": {
+        "explanation": "ALT is within normal baseline range.",
+        "nutritional_considerations": "Maintain balanced liver-supportive nutrition.",
+        "foods": ["Fresh seasonal vegetables and home-cooked meals."],
+        "precautions": ["No precautions required."]
+      },
+      "high": {
+        "explanation": "ALT is above reference range. In the urban Indian context, mild elevations are frequently associated with non-alcoholic fatty liver (NAFLD), high refined oil/sugar intake, or medication effects.",
+        "nutritional_considerations": "Focus on a liver-cleansing diet: minimize deep-fried foods (pakoras, puris), reduce sugar and alcohol, and emphasize sulfur-rich alliums and cruciferous vegetables.",
+        "foods": ["Garlic & Turmeric in cooking", "Methi Saag & Bitter Gourd (Karela)", "Amla Juice in the morning", "Green Tea", "Sprouted Moong"],
+        "precautions": ["Avoid unprescribed pain relievers or alcohol.", "Consult a gastroenterologist/physician for an ultrasound and lipid workup."]
+      },
+      "doctor_guidance": "ALT > 100 U/L warrants physician consultation."
+    },
+    "ast_sgot": {
+      "name": "AST / SGOT",
+      "category": "liver",
+      "aliases": ["ast", "sgot", "aspartate aminotransferase", "aspartate transaminase", "s.ast", "s.sgot"],
+      "default_unit": "U/L",
+      "default_ref": {"low": 10.0, "high": 40.0},
+      "description": "Enzyme present in liver, heart, and muscle tissue; evaluated alongside ALT.",
+      "low": {
+        "explanation": "AST is within normal baseline limits.",
+        "nutritional_considerations": "Maintain wholesome dietary habits.",
+        "foods": ["Standard balanced whole food meals."],
+        "precautions": ["No precautions required."]
+      },
+      "high": {
+        "explanation": "AST is above reference range. Elevated AST can reflect liver strain, intense physical exertion, or muscular stress.",
+        "nutritional_considerations": "Incorporate antioxidant-rich foods and avoid heavy trans-fats and alcohol.",
+        "foods": ["Papaya", "Amla", "Cruciferous vegetables (Cabbage, Cauliflower)", "Curd with Jeera"],
+        "precautions": ["Consult your physician to review AST in conjunction with ALT."]
+      },
+      "doctor_guidance": "AST > 80 U/L warrants medical review."
+    },
+    "alp": {
+      "name": "Alkaline Phosphatase (ALP)",
+      "category": "liver",
+      "aliases": ["alp", "alkaline phosphatase", "alk phos", "s.alp"],
+      "default_unit": "U/L",
+      "default_ref": {"low": 44.0, "high": 147.0},
+      "description": "Enzyme found in the bile ducts of the liver and in growing bone tissue.",
+      "low": {
+        "explanation": "ALP is below reference range, occasionally seen in Zinc or Magnesium deficiency or malnutrition.",
+        "nutritional_considerations": "Ensure adequate intake of Zinc and whole minerals.",
+        "foods": ["Pumpkin Seeds", "Cashews", "Whole Grains"],
+        "precautions": ["Discuss with your nutritionist."]
+      },
+      "high": {
+        "explanation": "ALP is elevated, which can indicate biliary tract sluggishness, bone turnover, or active growth phases in young adults.",
+        "nutritional_considerations": "Support biliary flow with hydration and fiber-rich greens.",
+        "foods": ["Radish (Mooli)", "Beetroot", "Lemon water", "Curd"],
+        "precautions": ["Consult your physician to determine whether the source is hepatic or bone-related."]
+      },
+      "doctor_guidance": "ALP > 200 U/L warrants medical consultation."
+    },
+    "bilirubin_total": {
+      "name": "Total Bilirubin",
+      "category": "liver",
+      "aliases": ["bilirubin", "total bilirubin", "s.bilirubin", "t.bilirubin", "serum bilirubin total"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 0.2, "high": 1.2},
+      "description": "Yellowish pigment formed during normal breakdown of red blood cells, processed by the liver.",
+      "low": {
+        "explanation": "Bilirubin is within normal range.",
+        "nutritional_considerations": "Maintain wholesome dietary habits.",
+        "foods": ["Wholesome balanced diet."],
+        "precautions": ["No precautions required."]
+      },
+      "high": {
+        "explanation": "Total Bilirubin is above reference range (>1.2 mg/dL). Can cause mild yellowing of sclera (eyes) and skin (jaundice).",
+        "nutritional_considerations": "Consume very light, easily digestible, low-fat foods. Avoid fried food, heavy spices, and oils completely.",
+        "foods": ["Boiled Moong Dal with Rice (Khichdi)", "Sugarcane juice (hygienically prepared)", "Radish (Mooli) Juice", "Coconut Water"],
+        "precautions": ["Seek medical consultation promptly.", "Avoid alcohol and fatty foods."]
+      },
+      "doctor_guidance": "Total Bilirubin > 2.0 mg/dL requires prompt clinical evaluation."
+    },
+    "albumin": {
+      "name": "Serum Albumin",
+      "category": "liver",
+      "aliases": ["albumin", "serum albumin", "s.albumin"],
+      "default_unit": "g/dL",
+      "default_ref": {"low": 3.5, "high": 5.0},
+      "description": "Major protein produced by the liver that keeps fluid inside blood vessels and transports vitamins and hormones.",
+      "low": {
+        "explanation": "Albumin is below reference range, suggesting lower circulating protein reserves or liver/kidney loss.",
+        "nutritional_considerations": "Boost bioavailable dietary protein intake.",
+        "foods": ["Egg Whites", "Fresh Paneer", "Soya chunks", "Mixed Dal with Rice", "Sprouted Chana"],
+        "precautions": ["Discuss with your physician to ensure adequate protein assimilation."]
+      },
+      "high": {
+        "explanation": "Albumin is elevated, almost exclusively due to acute hemoconcentration / dehydration.",
+        "nutritional_considerations": "Increase daily fluid and water intake.",
+        "foods": ["Water", "Chaas", "Coconut Water"],
+        "precautions": ["Rehydrate and recheck."]
+      },
+      "doctor_guidance": "Albumin < 3.0 g/dL warrants clinical evaluation."
+    },
+    "total_protein": {
+      "name": "Total Protein",
+      "category": "liver",
+      "aliases": ["total protein", "protein total", "s.protein", "serum total protein"],
+      "default_unit": "g/dL",
+      "default_ref": {"low": 6.0, "high": 8.3},
+      "description": "Combined measurement of two major protein classes in blood: Albumin and Globulin.",
+      "low": {
+        "explanation": "Total protein is below reference range.",
+        "nutritional_considerations": "Ensure every main meal includes a reliable protein component.",
+        "foods": ["Dal & Legumes (Rajma, Chana, Moong)", "Paneer / Tofu", "Eggs / Fish / Chicken"],
+        "precautions": ["Review protein intake with a clinical dietitian."]
+      },
+      "high": {
+        "explanation": "Total protein is elevated, which can accompany dehydration or immune/globulin activation.",
+        "nutritional_considerations": "Adequate daily hydration.",
+        "foods": ["Fresh fluids, water-rich vegetables."],
+        "precautions": ["Consult your physician to review the Albumin-to-Globulin (A/G) ratio."]
+      },
+      "doctor_guidance": "Review with your physician."
+    },
+    "cholesterol_total": {
+      "name": "Total Cholesterol",
+      "category": "lipids",
+      "aliases": ["total cholesterol", "cholesterol", "s.cholesterol", "serum cholesterol"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 125.0, "high": 200.0},
+      "description": "Sum of all cholesterol fractions in the blood, essential for cell membranes and steroid hormone synthesis.",
+      "low": {
+        "explanation": "Total cholesterol is below 125 mg/dL, which can occur in malabsorption or hyperthyroidism.",
+        "nutritional_considerations": "Include healthy monounsaturated and polyunsaturated fats in cooking.",
+        "foods": ["Desi Cow Ghee (1 tsp)", "Mustard Oil / Sesame Oil", "Almonds & Walnuts"],
+        "precautions": ["Discuss with your physician if very low."]
+      },
+      "high": {
+        "explanation": "Total cholesterol is above 200 mg/dL (borderline high 200-239 mg/dL; high >= 240 mg/dL).",
+        "nutritional_considerations": "Reduce saturated and hydrogenated vanaspati fats; increase soluble dietary fiber which binds intestinal cholesterol.",
+        "foods": ["Oats & Barley (Beta-glucan fiber)", "Methi (Fenugreek) seeds", "Garlic in cooking", "Flaxseed (Alsi) Powder", "Chana / Beans"],
+        "precautions": ["Avoid deep-fried snacks (samosas, bhujia) and hydrogenated fats (dalda/vanaspati).", "Engage in regular aerobic exercise."]
+      },
+      "doctor_guidance": "Total Cholesterol > 240 mg/dL warrants a complete cardiovascular risk review."
+    },
+    "ldl": {
+      "name": "LDL Cholesterol",
+      "category": "lipids",
+      "aliases": ["ldl", "ldl cholesterol", "low density lipoprotein", "ldl-c", "calculated ldl"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 0.0, "high": 100.0},
+      "description": "Low-Density Lipoprotein ('bad cholesterol'); carries cholesterol particles into arterial walls.",
+      "low": {
+        "explanation": "LDL is well within optimal limits (<100 mg/dL).",
+        "nutritional_considerations": "Maintain heart-healthy dietary patterns.",
+        "foods": ["Whole grains, seasonal sabzis, nuts"],
+        "precautions": ["Optimal for arterial health."]
+      },
+      "high": {
+        "explanation": "LDL is elevated (>100 mg/dL optimal limit; >130 borderline; >160 high). Increases atherogenic plaque deposition risk.",
+        "nutritional_considerations": "Adopt the soluble-fiber-rich Indian diet: Oats, Methi seeds, Psyllium husk (Isabgol), and unrefined cold-pressed oils in moderation.",
+        "foods": ["Isabgol (Psyllium husk) with water", "Oats Khichdi", "Garlic Tadka", "Walnuts & Almonds (5-6 soaked daily)", "Apples & Guavas (rich in pectin)"],
+        "precautions": ["Avoid commercial bakery items, trans-fats, and reuse of burned cooking oil.", "Consult your physician regarding cardiovascular target goals."]
+      },
+      "doctor_guidance": "LDL > 160 mg/dL warrants medical evaluation."
+    },
+    "hdl": {
+      "name": "HDL Cholesterol",
+      "category": "lipids",
+      "aliases": ["hdl", "hdl cholesterol", "high density lipoprotein", "hdl-c"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 40.0, "high": 60.0},
+      "description": "High-Density Lipoprotein ('good cholesterol'); scavenges excess cholesterol from blood vessels back to the liver for excretion.",
+      "low": {
+        "explanation": "HDL is below reference range (<40 mg/dL for men, <50 mg/dL for women). Common in South Asian populations with sedentary routines.",
+        "nutritional_considerations": "Incorporate healthy omega-3 fatty acids, exercise regularly, and replace refined carbs with healthy fats.",
+        "foods": ["Flaxseeds (Alsi) & Chia seeds", "Walnuts (Akhrot)", "Mustard oil / Olive oil in moderation", "Oily Fish (Mackerel/Rohu if non-veg)"],
+        "precautions": ["Aerobic exercise (brisk walking/jogging 150 mins/week) is the most potent way to elevate HDL."]
+      },
+      "high": {
+        "explanation": "HDL is high (>60 mg/dL), which is considered cardio-protective.",
+        "nutritional_considerations": "Continue heart-healthy lifestyle.",
+        "foods": ["Maintain active lifestyle and whole food diet."],
+        "precautions": ["No precautions required."]
+      },
+      "doctor_guidance": "HDL < 35 mg/dL warrants lifestyle and dietary intervention."
+    },
+    "triglycerides": {
+      "name": "Triglycerides",
+      "category": "lipids",
+      "aliases": ["triglycerides", "tg", "triglyceride", "s.triglycerides", "serum triglycerides"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 0.0, "high": 150.0},
+      "description": "The main form of stored fat in the body; surges quickly after excess carbohydrate and sugar intake.",
+      "low": {
+        "explanation": "Triglycerides are in the optimal healthy range (<150 mg/dL).",
+        "nutritional_considerations": "Maintain current balanced eating habits.",
+        "foods": ["Balanced Indian meals."],
+        "precautions": ["Optimal baseline."]
+      },
+      "high": {
+        "explanation": "Triglycerides are elevated (>150 mg/dL borderline; >200 mg/dL high; >500 mg/dL very high). Highly correlated in the Indian diet with excess refined carbs (white rice, maida, sweets) and alcohol.",
+        "nutritional_considerations": "Significantly cut down refined sugar, sweets, fruit juices, and white flour. Replace with high-fiber Millets (Jowar, Bajra, Ragi), legumes, and daily exercise.",
+        "foods": ["Jowar / Bajra Rotis", "Methi & Garlic in daily subzi", "Green Tea with Lemon", "Whole Moong Dal", "Walnuts"],
+        "precautions": ["Avoid alcohol, sweetened sodas, and Indian mithai.", "Triglycerides > 500 mg/dL pose an acute pancreatitis risk; seek immediate medical consultation."]
+      },
+      "doctor_guidance": "Triglycerides > 200 mg/dL warrants medical consultation; > 500 mg/dL requires prompt attention."
+    },
+    "vldl": {
+      "name": "VLDL Cholesterol",
+      "category": "lipids",
+      "aliases": ["vldl", "vldl cholesterol", "very low density lipoprotein", "vldl-c"],
+      "default_unit": "mg/dL",
+      "default_ref": {"low": 2.0, "high": 30.0},
+      "description": "Very Low-Density Lipoprotein produced by the liver to deliver triglycerides to body tissues.",
+      "low": {
+        "explanation": "VLDL is within normal limits.",
+        "nutritional_considerations": "Maintain balanced nutrition.",
+        "foods": ["Whole foods diet."],
+        "precautions": ["No precautions required."]
+      },
+      "high": {
+        "explanation": "VLDL is elevated, paralleling high triglyceride levels.",
+        "nutritional_considerations": "Cut refined sugars and simple carbs; emphasize exercise and high-fiber legumes.",
+        "foods": ["Bajra Khichdi", "Sprouts", "Salads before lunch and dinner"],
+        "precautions": ["Review lifestyle habits with your physician."]
+      },
+      "doctor_guidance": "Review with your physician alongside Triglycerides."
+    }
+  }
+}

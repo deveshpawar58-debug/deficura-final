@@ -59,3 +59,49 @@ export async function downloadPdfReport(assessmentPayload) {
     throw err;
   }
 }
+
+export async function extractBloodReportFromFile(file) {
+  try {
+    const formData = new FormData();
+    formData.append('file', file);
+    const res = await fetch(`${API_BASE}/blood-report/extract`, {
+      method: 'POST',
+      body: formData
+    });
+    if (!res.ok) throw new Error('Failed to extract report from file');
+    return await res.json();
+  } catch (err) {
+    console.error('API Error (extractBloodReportFromFile):', err);
+    throw err;
+  }
+}
+
+export async function extractBloodReportFromText(rawText) {
+  try {
+    const res = await fetch(`${API_BASE}/blood-report/extract`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ raw_text: rawText })
+    });
+    if (!res.ok) throw new Error('Failed to extract report from text');
+    return await res.json();
+  } catch (err) {
+    console.error('API Error (extractBloodReportFromText):', err);
+    throw err;
+  }
+}
+
+export async function analyzeBloodReportParameters(parameters) {
+  try {
+    const res = await fetch(`${API_BASE}/blood-report/analyze`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parameters })
+    });
+    if (!res.ok) throw new Error('Failed to analyze blood report parameters');
+    return await res.json();
+  } catch (err) {
+    console.error('API Error (analyzeBloodReportParameters):', err);
+    throw err;
+  }
+}

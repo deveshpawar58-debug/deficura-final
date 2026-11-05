@@ -1,4 +1,4 @@
-﻿# DefiCura — Symptom-Driven Micronutrient Risk Engine & Meal Planner
+# DefiCura — Symptom-Driven Micronutrient Risk Engine & Meal Planner
 
 **DefiCura** is a deterministic, rule-based full-stack web application for clinical micronutrient deficiency risk stratification and personalized Indian meal planning, specifically targeting the **7 most prevalent micronutrient deficiencies documented in the Indian population**.
 
@@ -93,10 +93,10 @@ python seed_validation.py
 ```
 
 ### Run Unit Tests
-Verifies mathematical scoring integrity, boundary conditions ($0.0, 0.25, 0.5, 0.75, 1.0$), explainability breakdown, and PDF export:
+Verifies mathematical scoring integrity, boundary conditions ($0.0, 0.25, 0.5, 0.75, 1.0$), explainability breakdown, blood report parser/analyzer, and PDF export:
 ```bash
 cd backend
-python test_backend.py
+python test_all_features.py
 ```
 
 ---
@@ -110,8 +110,19 @@ python test_backend.py
 | `POST` | `/assess` | Accepts binary symptoms JSON; returns normalized scores, explainability breakdown & 7-day Indian meal plan |
 | `GET` | `/history?user_id=...` | Returns longitudinal assessment history for trend tracking |
 | `POST` | `/report/pdf` | Generates and downloads a formal multi-page medical PDF report |
+| `POST` | `/blood-report/extract` | Accepts uploaded PDF/Image or raw text and extracts structured blood test parameters & laboratory reference ranges |
+| `POST` | `/blood-report/analyze` | Evaluates verified parameters against reference ranges; returns non-diagnostic explanations, Indian meal recommendations, precautions, and doctor guidance |
+
+---
+
+## 🩸 Blood Report Analyzer Feature
+DefiCura includes an integrated **Blood Report Analyzer** enabling users to:
+1. **Upload / Paste**: Digital lab PDFs, medical images (PNG/JPG), or portal text.
+2. **Review & Verify**: Correct any OCR/parsing values and verify printed reference ranges vs general fallbacks.
+3. **Analyze**: Deterministically stratifies tests across CBC, Iron Panel, Vitamins, Glucose, Kidney, Liver, and Lipids.
+4. **Food-First Guidance**: Generates personalized 5-slot Indian dietary plans (Breakfast, Mid-morning, Lunch, Evening Snack, Dinner) without medical diagnosis.
 
 ---
 
 ## ⚖️ Clinical & Legal Disclaimer
-DefiCura is an educational, deterministic risk-stratification system designed for dietary optimization and preventative awareness. It does not provide medical diagnoses. Individuals with moderate-to-high risk scores should consult certified clinical dietitians or physicians for formal serum assays (e.g., Serum Ferritin, Serum B12, 25-OH Vitamin D).
+DefiCura is an educational, deterministic risk-stratification system designed for dietary optimization and preventative awareness. It does not provide medical diagnoses. Individuals with moderate-to-high risk scores or out-of-range laboratory values should consult certified clinical dietitians or physicians for formal medical care.

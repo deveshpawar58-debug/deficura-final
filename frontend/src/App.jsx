@@ -3,6 +3,7 @@ import Header from './components/Header';
 import SymptomQuestionnaire from './components/SymptomQuestionnaire';
 import ResultsDashboard from './components/ResultsDashboard';
 import HistoryView from './components/HistoryView';
+import BloodReportAnalyzer from './components/BloodReportAnalyzer';
 import LoadingOverlay from './components/LoadingOverlay';
 import { 
   fetchNutrientsMetadata, 
@@ -132,6 +133,10 @@ export default function App() {
     }
   };
 
+  const handleViewBloodAnalyzer = () => {
+    setActiveView('blood_analyzer');
+  };
+
   const handleSelectHistoricalRecord = (recordData) => {
     setAssessmentData(recordData);
     setActiveView('results');
@@ -146,6 +151,7 @@ export default function App() {
         setDarkMode={setDarkMode}
         onViewHistory={handleViewHistory}
         onResetAssessment={handleResetAssessment}
+        onViewBloodAnalyzer={handleViewBloodAnalyzer}
         hasResults={!!assessmentData}
         activeTab={activeView}
       />
@@ -191,6 +197,11 @@ export default function App() {
             onSelectRecord={handleSelectHistoricalRecord}
             onBackToQuestionnaire={() => setActiveView(assessmentData ? 'results' : 'questionnaire')}
           />
+        )}
+
+        {/* View 4: Blood Report Analyzer */}
+        {activeView === 'blood_analyzer' && (
+          <BloodReportAnalyzer />
         )}
       </main>
 

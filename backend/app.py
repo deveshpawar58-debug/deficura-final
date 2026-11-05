@@ -11,6 +11,8 @@ from modules.scoring_engine import score_assessment
 from modules.meal_planner import generate_personalized_meal_plan
 from modules.history_storage import save_assessment_record, get_user_history, get_assessment_by_id
 from modules.pdf_generator import generate_pdf_report
+from modules.blood_report_parser import extract_text_from_file, parse_blood_report_text
+from modules.blood_report_analyzer import analyze_verified_report
 
 app = Flask(__name__)
 # Enable CORS for all routes
@@ -133,6 +135,81 @@ def export_pdf():
     response.headers['Content-Type'] = 'application/pdf'
     response.headers['Content-Disposition'] = 'attachment; filename=DefiCura_Nutritional_Report.pdf'
     return response
+
+@app.route('/blood-report/extract', methods=['POST'])
+def extract_blood_report():
+    """
+    Accepts uploaded file (PDF/Image) or raw text and returns extracted blood test parameters.
+    """
+    try:
+        raw_text = ""
+        filename = "pasted_text.txt"
+        
+        # Check if multipart file was uploaded
+        if 'file' in request.files:
+            uploaded_file = request.files['file']
+            if uploaded_file.filename:
+                filename = uploaded_file.filename
+                file_bytes = uploaded_file.read()
+                raw_text = extract_text_from_file(file_bytes, filename)
+        else:
+            # Check for JSON payload with raw_text
+            json_data = request.get_json(force=True, silent=True) or {}
+            raw_text = json_data.get('raw_text', '')
+            
+        if not raw_text.strip():
+            return jsonify({
+                'success': False,
+                'error': 'No readable text could be extracted. Please paste your laboratory text or enter parameters manually.',
+                'extracted_parameters': [],
+                'total_detected': 0
+            }), 200
+            
+        extracted_params = parse_blood_report_text(raw_text)
+        
+        return jsonify({
+            'success': True,
+            'filename': filename,
+            'extracted_parameters': extracted_params,
+            'total_detected': len(extracted_params),
+            'raw_text_snippet': raw_text[:500] if raw_text else ''
+        }), 200
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': f'Error extracting blood report: {str(e)}',
+            'extracted_parameters': [],
+            'total_detected': 0
+        }), 500
+
+@app.route('/blood-report/analyze', methods=['POST'])
+def analyze_blood_report():
+    """
+    Accepts user-verified list of parameters, compares against reference ranges,
+    and returns deterministic analysis, nutritional considerations, Indian food recommendations,
+    precautions, and doctor consultation guidance.
+    """
+    try:
+        data = request.get_json(force=True, silent=True) or {}
+        parameters = data.get('parameters', [])
+        
+        if not parameters:
+            return jsonify({
+                'success': False,
+                'error': 'No parameters provided for analysis.'
+            }), 400
+            
+        analysis_result = analyze_verified_report(parameters)
+        
+        return jsonify({
+            'success': True,
+            'analysis': analysis_result
+        }), 200
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': f'Error analyzing parameters: {str(e)}'
+        }), 500
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
